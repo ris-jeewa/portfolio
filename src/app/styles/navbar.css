@@ -1,0 +1,72 @@
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo span{
+    text-shadow: 0 0 25px var(--main-color);
+    color: var(--main-color);
+
+}
+
+
+.navbar a{
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+section {
+    min-height: 100vh;
+    padding:0rem 12% 20rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15rem;
+    margin-top: 40px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(145, 147, 149, 0.4) ;
+    padding:0rem 3rem;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    
+}
+
+span {
+    color: var(--main-color);
+}
+
+.profile-img {
+    rotate: -15deg;
+    border-radius: 5%;
+    background-color: var(--main-color);
+}
+
+.profile-box {
+    border-radius: 5%;
+    border:2px solid var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+    background-color: var(--bg-color);
+    height: 1000;
+    width: 1000;
+}
