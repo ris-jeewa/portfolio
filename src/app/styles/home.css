@@ -35,6 +35,7 @@ section {
     justify-content: center;
     gap:15rem;
     margin-top: 40px;
+    position: relative;
 }
 
 .home-content {
@@ -69,4 +70,32 @@ span {
     background-color: var(--bg-color);
     height: 1000;
     width: 1000;
+}
+
+#media:hover {
+    transform: scale(1.5);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    justify-content: center;
+    position: relative;
+}
+
+.topic {
+    font-size: large;
+    background: linear-gradient(var(--second-color), var(--text-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.services {
+    width: full;
+    left: 0;
+    right: 0;
 }

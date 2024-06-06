@@ -18,6 +18,7 @@
   --second-bg-color:#131313;
   --text-color:#fff;
   --main-color:#FFD500;
+  --second-color:#83828e;
 }
 
 html {
@@ -27,4 +28,9 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
