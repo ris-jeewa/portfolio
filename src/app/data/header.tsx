@@ -5,6 +5,11 @@ import {
 
 export const navItems = [
     {
+      name: "Home",
+      link: "#home",
+      icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
       name: "About Me",
       link: "#aboutme",
       icon: (
@@ -12,13 +17,13 @@ export const navItems = [
       ),
     },
     {
-      name: "Services",
-      link: "#services",
+      name: "Portfolio",
+      link: "#portfolio",
       icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Projects",
-      link: "#projects",
+      name: "Services",
+      link: "#services",
       icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {

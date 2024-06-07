@@ -23,12 +23,9 @@
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
 }
-
 section {
-    min-height: 100vh;
-    padding:0rem 12% 20rem;
+    margin-bottom: 8rem;
 }
-
 .home {
     display: flex;
     align-items: center;
@@ -98,4 +95,7 @@ span {
     width: full;
     left: 0;
     right: 0;
+}
+
+.contact {
 }

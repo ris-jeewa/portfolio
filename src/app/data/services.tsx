@@ -27,7 +27,7 @@ export const content = [
           src="/images/front.jpg"
           width={400}
           height={400}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fill"
           alt="ui"
         />
       </div>
@@ -43,7 +43,7 @@ export const content = [
           src="/images/back.jpg"
           width={400}
           height={400}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fill"
           alt="ui"
         />
       </div>
@@ -59,7 +59,7 @@ export const content = [
           src="/images/test.jpg"
           width={400}
           height={400}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-fill"
           alt="ui"
         />
       </div>

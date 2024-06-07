@@ -1,0 +1,40 @@
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+    text-align: center;
+}
+
+form .input-box  {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form .input-box input,
+form .textarea textarea {
+    width: 100%;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.9rem;
+    border: 1px solid var(--second-color);
+    resize: none;
+}
+
+form .input-box input {
+    width: 300px;
+    padding: 1.7rem 1rem;
+}
+form .textarea textarea {
+    height: 200px;
+    width: 400px;
+    padding: 1.7rem 1rem;
+    
+}
+
+.textarea button {
+    width: 200px;
+}
