@@ -14,6 +14,7 @@ import { HeaderSection } from "./components/Header";
 import { media } from "./data/media";
 import { AboutMeSection } from "./components/About";
 import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
+import { IconMenu2 } from "@tabler/icons-react";
 
 export const certificates = [
   "/images/certify/1.jpg",
@@ -41,14 +42,23 @@ const Home = () => {
 const Page = () => {
   return (
     <div>
-      <div className="container h-[30rem] relative mt-8 px-14">
-        <Vortex className="z-0">
-          <div className=" flex justify-between flex-wrap z-10" id="home">
-            <p className="logo">
+      <div className="container h-[30rem] relative mt-8 px-5 sm:px-14 ">
+        <Vortex className="z-0 ">
+          <div className=" flex justify-between flex-wrap z-10 text-sm sm:text-lg" id="home">
+            <p id="logo" >
               <span>Risni</span> Dheerasekara
             </p>
 
-            
+            <div id="avatar">
+            <Image
+              src="/images/avatar.svg"
+              alt="image"
+              className="h-10 w-10 "
+              width={60}
+              height={5}
+            />
+            </div>
+
             <div className="navbar">
               {navItems.map((item, index) => (
                 <a href={item.link} key={index} className="navbar">
@@ -57,23 +67,11 @@ const Page = () => {
               ))}
             </div>
 
-            <div className="bx-menu" id="menu-icon">
-              <Image
-                src="/images/menu.svg"
-                alt="image"
-                className="h-10 w-10"
-                width={60}
-                height={5}
-              />
+            <div className="h-7 w-7" id="menu-icon">
+              <IconMenu2 size={30} />
             </div>
 
-            <Image
-              src="/images/avatar.svg"
-              alt="image"
-              className="h-10 w-10"
-              width={60}
-              height={5}
-            />
+            
           </div>
 
           <section className="home" id="home">
@@ -81,7 +79,7 @@ const Page = () => {
           </section>
         </Vortex>
 
-        <div className="absolute right-5 bottom-[50px] flex flex-col gap-4">
+        <div className="absolute right-5 bottom-[200px] sm:bottom-[50px] md:bottom-[50px] flex flex-col gap-4 ">
           {media.map((media, index) => (
             <Link href={media.link} key={index}>
               {media.icon}

@@ -30,6 +30,13 @@ body {
   color: var(--text-color);
 }
 
+.header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  
+}
+
 /* Hide scrollbar for Chrome, Safari, and Opera */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -38,5 +45,15 @@ body {
 #menu-icon {
   font-size: 3.6rem;
   color: var(--main-color);
-  /* display: none; */
+  display: none;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media(max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
 }

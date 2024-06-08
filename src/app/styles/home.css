@@ -65,8 +65,9 @@ span {
     border:2px solid var(--main-color);
     box-shadow: 0 0 20px var(--main-color);
     background-color: var(--bg-color);
-    height: 1000;
-    width: 1000;
+    /* height: 1000; */
+    /* width: 1000; */
+    /* object-fit: cover; */
 }
 
 #media:hover {
@@ -96,6 +97,58 @@ span {
     left: 0;
     right: 0;
 }
+.headRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 40px;
 
-.contact {
 }
+
+@media only screen and (max-width: 768px) {
+    #logo {
+        font-size: 1.1rem;
+      }
+    
+      #avatar {
+        display:flexbox;
+      }
+    
+      #menu-icon {
+        display: flex;
+      }
+      .navbar {
+        display: none;
+      }
+
+    .profile-box {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .profile-img {
+        .profile-img {
+            /* width: 10%; */
+            /* height: 10%; */
+            align-items: center;
+            justify-content: center;
+            /* margin-left: 400px; */
+            display: block;
+        }
+    }
+    
+    .home {
+        flex-direction: row;
+    }
+
+    .headRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+  
+  }
+
+ 

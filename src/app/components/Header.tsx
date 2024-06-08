@@ -1,24 +1,24 @@
-import React from 'react'
-import Image from 'next/image'
-import { words1, words2 } from '../data/header'
-import { TypewriterEffectSmooth } from './ui/typewriter-effect'
-import { HoverBorderGradient } from './ui/hover-border-gradient'
-import { IconArrowRight } from '@tabler/icons-react'
-
+import React from "react";
+import Image from "next/image";
+import { words1, words2 } from "../data/header";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { IconArrowRight } from "@tabler/icons-react";
 
 export const HeaderSection = () => {
   return (
-    <>
-    <div className="profile-box">
-              <Image
-                src="/images/profile-img.png"
-                alt="image"
-                className="profile-img"
-                width={300}
-                height={300}
-              />
-            </div>
-            <div className="home-content">
+    <div className="headRow">
+      <div className="profile-box">
+        <Image
+          src="/images/profile-img.png"
+          alt="image"
+          className="profile-img"
+          width={100}
+          height={100}
+          layout="responsive"
+        />
+      </div>
+      <div className="home-content">
               <TypewriterEffectSmooth words={words1} delay={1} />
               <TypewriterEffectSmooth words={words2} delay={4} />
               <p>
@@ -39,6 +39,6 @@ export const HeaderSection = () => {
                 <IconArrowRight className="ml-4" />
               </HoverBorderGradient>
             </div>
-    </>
-  )
-}
+    </div>
+  );
+};
