@@ -15,7 +15,7 @@ export const BackgroundGradient = ({
 }) => {
   const variants = {
     initial: {
-      backgroundPosition: "0 50%",
+      backgroundPosition: "40% 10%",
     },
     animate: {
       backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],

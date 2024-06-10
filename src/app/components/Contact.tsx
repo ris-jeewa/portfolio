@@ -3,8 +3,9 @@ import React from "react";
 import { Label } from "@/app/components/ui/label";
 import { Input } from "@/app/components/ui/input";
 import { cn } from "@/app/utils/cn";
-import "../styles/contact.css";
+// import "../styles/contact.css";
 import { InputProps } from './ui/input';
+import { CardTitle } from "./ui/card-hover-effect";
 
 export const contact = [
   {
@@ -37,35 +38,35 @@ export const Contact = () => {
 
   return (
     <>
-      <form className="flex flex:col md:flex-row gap-5 " onSubmit={handleSubmit}>
+      <form className="flex flex-col md:flex-row md:gap-[5rem] gap-[1rem] bg-black align-center justify-center text-center" onSubmit={handleSubmit}>
         <div className="input-group">
-          <LabelInputContainer>
+          <LabelInputContainer> 
             {contact.map((contact, index) => (
            
-                <div className="input-box">
+                <div className="flex justify-center flex-wrap" key={index}>
                 <Input
                   id={contact.id}
                   placeholder={contact.label}
                   type={contact.type}
-                  className="bg-black border-2 border-white" 
+                  className="w-[300px] py-[1.7rem] px-[1rem] text-[0.9rem] rounded-lg bg-black transition ease-in-out delay-2 hover:-translate-y-1 hover:scale-110 duration-100 shadow-[0_0_3px_var(--main-color)]" 
                 />
                 </div>
               
             ))}
           </LabelInputContainer>
         </div>
-
-        <div className="textarea">
-          <LabelInputContainer className="mb-4">
+        
+        <div className="ml-[2rem]">
+          <LabelInputContainer >
             <textarea
-              id="twitterpassword"
-              placeholder="Your Message"
-              className="h-[200px] w-[500] rounded-lg bg-yellow "
+              id="message"
+              placeholder="Your Message:"
+              className="w-[300px] md:w-[400px] rounded-lg h-[200px] text-[0.9rem] bg-black rounded-lg shadow-[0_0_3px_var(--main-color)] py-[1.7rem] px-[1rem]"
             />
           </LabelInputContainer>
 
           <button
-            className="bg-yellow-500 py-1.3 rounded-full font-bold text-lg transition hover:scale-125 duration-300 shadow-yellow-500 shadow-md "
+            className="mt-[3rem] md:mt-[1rem] w-[200px] bg-yellow-500 py-1.3 rounded-full font-bold text-lg transition hover:scale-125 duration-300 shadow-yellow-500 shadow-md "
             type="submit"
           >
             Send  &rarr;

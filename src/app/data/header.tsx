@@ -35,17 +35,13 @@ export const navItems = [
   
   export const words1 = [
     {
-      text: "Hello",
+      text: "Hello, ",
     },
     {
       text: "I'm",
     },
     {
       text: "Risni",
-      className: "text-yellow-500 dark:text-blue-500 /n",
-    },
-    {
-      text: "Dheerasekara.",
       className: "text-yellow-500 dark:text-blue-500 /n",
     },
   ];

@@ -13,12 +13,11 @@ form .input-box  {
     flex-wrap: wrap;
 }
 
-form .input-box input,
-form .textarea textarea {
+form .input-box input
+{
     width: 100%;
     font-size: 0.9rem;
-    color: var(--text-color);
-    background: var(--bg-color);
+  
     border-radius: 0.9rem;
     border: 1px solid var(--second-color);
     resize: none;
@@ -28,12 +27,12 @@ form .input-box input {
     width: 300px;
     padding: 1.7rem 1rem;
 }
-form .textarea textarea {
+/* form .textarea textarea {
     height: 200px;
     width: 400px;
     padding: 1.7rem 1rem;
     
-}
+} */
 
 .textarea button {
     width: 200px;
