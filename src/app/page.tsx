@@ -40,7 +40,13 @@ const Home = () => {
   );
 };
 
+
 const Page = () => {
+  const [isVisible, setIsVisible] = React.useState(false);
+  const displayNav = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <div>
       <div className="h-[30rem] relative mt-8 px-5 sm:px-14 ">
@@ -68,8 +74,18 @@ const Page = () => {
               ))}
             </div>
 
-            <div className="h-7 w-7" id="menu-icon">
-              <IconMenu2 size={30} />
+            {isVisible && (
+              <div className="flex flex-col gap-4 absolute right-2 top-10 border-2 border-yellow-200 ">
+              {navItems.map((item, index) => (
+                <a href={item.link} key={index} className=" hover:text-yellow-500" >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+            )}
+
+            <div className="h-7 w-7 cursor-pointer" id="menu-icon">
+              <IconMenu2 size={30} onClick={displayNav}/>
             </div>
 
             
@@ -80,7 +96,7 @@ const Page = () => {
           </section>
         </Vortex>
 
-        <div className="absolute right-5 bottom-[14rem] sm:bottom-[50px] md:bottom-[50px] flex flex-col md:gap-4 ">
+        <div className={`${isVisible ?"bottom-0":"bottom-[200px]"} absolute right-5 sm:bottom-[50px] md:bottom-[50px] flex flex-col md:gap-4 `}>
           {media.map((media, index) => (
             <Link href={media.link} key={index} >
               {media.icon}

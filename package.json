@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@radix-ui/react-label": "^2.0.2",
     "@react-three/fiber": "^8.16.8",
     "@tabler/icons-react": "^3.5.0",

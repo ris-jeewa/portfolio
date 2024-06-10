@@ -7,9 +7,20 @@ import { IconArrowRight } from "@tabler/icons-react";
 // import "../styles/header.css";
 
 export const HeaderSection = () => {
+  const downloadCV = () => {
+    const url = "/images/risni.pdf";
+    const file = "risni.pdf";
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", file);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
   return (
     <div className="justify-center flex flex-col md:flex-row md:gap-0 gap-[2rem] align-center mt-[4rem]">
-      <div className="w-[50%] md:w-[40%] justify-center align-center ml-[6rem]">
+      <div className="w-[50%] md:w-[40%] justify-center align-center ml-[8rem]">
         <div className="rounded-[5%] border-[2px] border-[var(--main-color)] shadow-[0_0_20px_var(--main-color)] bg-[var(--bg-color)] md:max-w-[250px] max-w-[100px]  ">
           <Image
             src="/images/profile-img.png"
@@ -33,6 +44,7 @@ export const HeaderSection = () => {
           containerClassName="rounded-full absolute bottom-3 right-6 w-[180px] md:w-[200px] md:h-[50px] h-[40px] "
           as="button"
           className="bg-black text-white flex items-center md:space-x-2 "
+          onClick={downloadCV}
         >
           Download my CV
           <IconArrowRight className="ml-4" size={15}/>

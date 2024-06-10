@@ -16,11 +16,11 @@ export const projects = [
   {
     title: "Anothershot",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      " AnotherShot is a progressive web app revolutionizing photography bookings. It simplifies the process for clients to find and book photographers for various events while providing a stunning platform for photographers to showcase their portfolios",
   },
   {
     title: "Photo-Gallery",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
+      "I recently created Photo-Gallery, a responsive website that displays high-quality images sourced from the Unsplash Free HD Photo API. The site offers an engaging and intuitive way to browse a curated selection of stunning photos from around the world, ensuring a visually captivating experience on any device.",
   },
 ];
