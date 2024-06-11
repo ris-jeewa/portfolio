@@ -8,7 +8,7 @@ export const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center text-white">
         <Image
-          src="/images/ui.jpg"
+          src="images/ui.jpg"
           width={400}
           height={400}
           className="h-full w-full object-fill"

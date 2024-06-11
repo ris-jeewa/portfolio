@@ -18,16 +18,16 @@ import { IconMenu2 } from "@tabler/icons-react";
 import { Portfolio } from "./components/Portfolio";
 
 const certificates = [
-  "/images/certify/1.jpg",
-  "/images/certify/2.jpg",
-  "/images/certify/3.jpg",
-  "/images/certify/4.jpg",
-  "/images/certify/5.jpg",
-  "/images/certify/6.jpg",
-  "/images/certify/7.jpg",
-  "/images/certify/8.jpg",
-  "/images/certify/9.jpg",
-  "/images/certify/10.jpg",
+  "images/certify/1.jpg",
+  "images/certify/2.jpg",
+  "images/certify/3.jpg",
+  "images/certify/4.jpg",
+  "images/certify/5.jpg",
+  "images/certify/6.jpg",
+  "images/certify/7.jpg",
+  "images/certify/8.jpg",
+  "images/certify/9.jpg",
+  "images/certify/10.jpg",
 ];
 const Home = () => {
   return (

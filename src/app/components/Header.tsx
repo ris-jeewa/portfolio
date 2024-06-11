@@ -22,7 +22,7 @@ export const HeaderSection = () => {
       <div className="w-[50%] md:w-[40%] justify-center align-center ml-[8rem]">
         <div className="rounded-[5%] border-[2px] border-[var(--main-color)] shadow-[0_0_20px_var(--main-color)] bg-[var(--bg-color)] md:max-w-[250px] max-w-[100px]  ">
           <Image
-            src="/images/profile-img.png"
+            src="images/profile-img.png"
             alt="image"
             className="transform rotate-[-15deg] rounded-[5%] bg-[var(--main-color)] max-w-[250px]"
             width={200}
