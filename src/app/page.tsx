@@ -56,7 +56,7 @@ const Page = () => {
 
             <div id="avatar">
             <Image
-              src="/images/avatar.svg"
+              src="images/avatar.svg"
               alt="image"
               className="md:h-13 md:w-13 w-10 h-10 shadow-[0_0_20px_var(--main-color)] rounded-full"
               width={60}

@@ -24,7 +24,7 @@ export const content = [
     content: (
       <div className="h-500 w-500  flex items-center justify-center text-white">
         <Image
-          src="/images/front.jpg"
+          src="images/front.jpg"
           width={400}
           height={400}
           className="h-full w-full object-fill"
@@ -40,7 +40,7 @@ export const content = [
     content: (
       <div className="h-500 w-500  flex items-center justify-center text-white">
         <Image
-          src="/images/back.jpg"
+          src="images/back.jpg"
           width={400}
           height={400}
           className="h-full w-full object-fill"
@@ -56,7 +56,7 @@ export const content = [
     content: (
         <div className="h-500 w-500  flex items-center justify-center text-white">
         <Image
-          src="/images/test.jpg"
+          src="images/test.jpg"
           width={400}
           height={400}
           className="h-full w-full object-fill"
