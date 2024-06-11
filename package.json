@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
+    "@radix-ui/react-label": "^2.0.2",
+    "@react-three/fiber": "^8.16.8",
     "@tabler/icons-react": "^3.5.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "tailwind-merge": "^2.3.0"
+    "simplex-noise": "^4.0.1",
+    "tailwind-merge": "^2.3.0",
+    "three": "^0.165.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.165.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",

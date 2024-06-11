@@ -18,6 +18,7 @@
   --second-bg-color:#131313;
   --text-color:#fff;
   --main-color:#FFD500;
+  --second-color:#83828e;
 }
 
 html {
@@ -27,4 +28,34 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  #menu-icon {
+    display: flex;
+  }
 }
