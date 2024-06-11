@@ -32,9 +32,7 @@ const certificates = [
 const Home = () => {
   return (
     <div className="container">
-      {/* <div className="border-2 border-yellow-500"> */}
       <FloatingNav navItems={navItems} />
-      {/* </div> */}
       <Page />
     </div>
   );
@@ -75,9 +73,9 @@ const Page = () => {
             </div>
 
             {isVisible && (
-              <div className="flex flex-col gap-4 absolute right-2 top-10 border-2 border-yellow-200 ">
+              <div className="flex flex-col gap-4 absolute right-2 top-10 translate ease-in duration-300 ">
               {navItems.map((item, index) => (
-                <a href={item.link} key={index} className=" hover:text-yellow-500" >
+                <a href={item.link} key={index} className="hover:text-yellow-500" >
                   {item.name}
                 </a>
               ))}

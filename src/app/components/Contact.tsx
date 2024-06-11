@@ -1,11 +1,6 @@
 "use client";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-// import { Input } from "@/app/components/ui/input";
-import { cn } from "@/app/utils/cn";
-// import "../styles/contact.css";
-import { InputProps } from "./ui/input";
-import { CardTitle } from "./ui/card-hover-effect";
 import { IconHeart } from "@tabler/icons-react";
 
 const contact = [
@@ -32,11 +27,6 @@ const contact = [
 ];
 
 export const Contact = () => {
-  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  //   e.preventDefault();
-  //   console.log("Form submitted");
-  // };
-
   const [state, handleSubmit] = useForm("xgeggowb");
   if (state.succeeded) {
     return <p className="text-center text-yellow-500 flex justify-center align-center items-center shadow-[0_0_18px_var(--main-color)] rounded-full py-3 px-4">Received With Thanks! <span ><IconHeart /></span></p>;

@@ -4,7 +4,6 @@ import { words1, words2 } from "../data/header";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { IconArrowRight } from "@tabler/icons-react";
-// import "../styles/header.css";
 
 export const HeaderSection = () => {
   const downloadCV = () => {
