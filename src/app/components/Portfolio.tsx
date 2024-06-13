@@ -2,7 +2,7 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 
 export const Portfolio = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center max-w-5xl mx-auto ">
+    <div className="flex flex-col md:flex-row justify-center items-center max-w-5xl mx-auto h-full max-h-full ">
       <HoverEffect items={projects} />
     </div>
   );
