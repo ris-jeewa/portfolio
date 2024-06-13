@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "./components/ui/floating-navbar";
-import Image from "next/image";
 import "./styles/home.css";
 import { Vortex } from "./components/ui/vortex";
 import Link from "next/link";
@@ -18,16 +17,15 @@ import { IconMenu2 } from "@tabler/icons-react";
 import { Portfolio } from "./components/Portfolio";
 
 const certificates = [
-  "images/certify/1.jpg",
-  "images/certify/2.jpg",
-  "images/certify/3.jpg",
-  "images/certify/4.jpg",
-  "images/certify/5.jpg",
-  "images/certify/6.jpg",
-  "images/certify/7.jpg",
-  "images/certify/8.jpg",
-  "images/certify/9.jpg",
-  "images/certify/10.jpg",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F1.jpg?alt=media&token=76d902a5-4ead-441b-91f9-2cc1c40fab2c",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F10.jpg?alt=media&token=d58bc4e9-ca93-41fd-8795-7f27e35ccb9e",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F2.jpg?alt=media&token=78aa45f4-e6a7-48e6-a44e-80d13016e33f",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F3.jpg?alt=media&token=35cc26f6-c794-45c6-bea1-b1ea4fb8f5fb",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F4.jpg?alt=media&token=efe70d9c-f3bd-42e1-ae78-51f661212bdf",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F5.jpg?alt=media&token=2ae84b6c-43fe-4082-a4a2-c5d0308ed07e",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F6.jpg?alt=media&token=bb79bf58-0a4c-4756-bc89-389909702bd4",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F7.jpg?alt=media&token=d9032cfa-63ac-4264-bd66-7e3318a5afb1",
+  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F8.jpg?alt=media&token=714bdff2-131c-45c0-b515-be6098240acc",
 ];
 const Home = () => {
   return (
@@ -45,6 +43,7 @@ const Page = () => {
     setIsVisible(!isVisible);
   };
 
+
   return (
     <div>
       <div className="h-[30rem] relative mt-8 px-5 sm:px-14 ">
@@ -55,8 +54,8 @@ const Page = () => {
             </p>
 
             <div id="avatar">
-            <Image
-              src="images/avatar.svg"
+            <img
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/avatar.svg?alt=media&token=4ec0b73f-bba6-4c2b-bdc9-a6f63b9d9e4f"
               alt="image"
               className="md:h-13 md:w-13 w-10 h-10 shadow-[0_0_20px_var(--main-color)] rounded-full"
               width={60}

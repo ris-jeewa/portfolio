@@ -97,11 +97,11 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className=""
               >
-                <Image
+                <img
               src={item}
               alt="image"
-              fill
-              className="p-2"
+              
+              className="object-cover w-full h-full right-0 top-0 absolute"
                />
               </div>
               
