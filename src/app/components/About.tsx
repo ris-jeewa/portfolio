@@ -46,7 +46,7 @@ export const skills = [
 ];
 export const AboutMeSection = () => {
   return (
-    <div className="ml-[50px] w-[250px] md:ml-0 flex flex-col gap-10 md:w-[800px]">
+    <div className=" w-[250px] gap-10 md:w-[800px] flex flex-col justify-center max-w-5xl mx-auto h-full max-h-full mt-[4rem] ">
       <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-black dark:bg-zinc-900 ">
         <div className="uppercase md:text-2xl text-yellow-100 ">
           Personal Infos

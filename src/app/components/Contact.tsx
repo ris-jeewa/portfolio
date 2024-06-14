@@ -60,7 +60,7 @@ export const Contact = () => {
             
         </div>
 
-        <div className="ml-[3rem] flex flex-col">
+        <div className="flex flex-col items-center gap-4">
             <textarea
               id="message"
               placeholder="Your Message:"

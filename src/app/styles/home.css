@@ -27,13 +27,6 @@ section {
   cursor: pointer;
 }
 
-.aboutme {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  justify-content: center;
-  position: relative;
-}
 
 .topic {
   font-size: large;
@@ -66,7 +59,7 @@ section {
     display: none;
   }
   .aboutme {
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
   .topic {
     font-size: medium;

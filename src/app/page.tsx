@@ -71,6 +71,7 @@ const Page = () => {
               ))}
             </div>
 
+            <div className="md:hidden">
             {isVisible && (
               <div className="flex flex-col gap-4 absolute right-2 top-10 translate ease-in duration-300 ">
               {navItems.map((item, index) => (
@@ -80,6 +81,7 @@ const Page = () => {
               ))}
             </div>
             )}
+            </div>
 
             <div className="h-7 w-7 cursor-pointer" id="menu-icon">
               <IconMenu2 size={30} onClick={displayNav}/>
