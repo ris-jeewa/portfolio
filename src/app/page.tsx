@@ -135,16 +135,12 @@ const Page = () => {
         <Contact />
       </section> 
 
-       <section className="" id="certify">
-        <h1 className="mt-3 mb-3 bg-gradient-to-br from-yellow-300 to-slate-500 py- bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl drop-shadow-lg font-extrabold">
-          Certificates
-        </h1>
-        <div className="flex flex-col antialiased py-8 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            items={certificates}
-            direction="right"
-            speed="slow"
-          />
+      <section className="footer" id="footer">
+        <div className="horizontal"></div>
+          <div>
+          <h3>Design & Developed by <span>Risni Dheerasekara</span></h3>
+          <h3>@2024. All rights reserved</h3>
+
         </div>
       </section> 
     </div>

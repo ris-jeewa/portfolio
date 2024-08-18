@@ -42,6 +42,21 @@ section {
   right: 0;
 }
 
+.footer{
+  .horizontal {
+    border-top: 2px solid var(--second-color);
+    margin: 20px 300px;
+  }
+  h3 {
+    span{
+      color:white;
+    }
+  }
+  color: var(--second-color);
+  text-align: center;
+  font-size:12px;
+}
+
 
 @media only screen and (max-width: 768px) {
   #media {
