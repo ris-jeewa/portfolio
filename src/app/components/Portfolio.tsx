@@ -29,7 +29,7 @@ export const projects = [
   {
     title: "Quick Chat",
     image: "",
-    description:""
+    description:"Developed a modern, real-time chat application using React JS and Firebase. This project demonstrates my proficiency in front-end development and working with cloud services."
   },
   
 ];
