@@ -7,7 +7,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export const HeaderSection = () => {
   const downloadCV = () => {
-    const url="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/Risni%20Dheerasekara.pdf?alt=media&token=c6e2d8b8-2c09-448c-bb42-f2d35c59910e";
+    const url="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/Risni%20Dheerasekara.pdf?alt=media&token=a10f17d3-c521-4c9b-bca2-d8b3fb4455ba";
     const file = "RisniCV.pdf";
     const link = document.createElement("a");
     link.href = url;
