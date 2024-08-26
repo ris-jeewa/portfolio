@@ -16,17 +16,6 @@ import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
 import { IconMenu2 } from "@tabler/icons-react";
 import { Portfolio } from "./components/Portfolio";
 
-const certificates = [
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F1.jpg?alt=media&token=76d902a5-4ead-441b-91f9-2cc1c40fab2c",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F10.jpg?alt=media&token=d58bc4e9-ca93-41fd-8795-7f27e35ccb9e",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F2.jpg?alt=media&token=78aa45f4-e6a7-48e6-a44e-80d13016e33f",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F3.jpg?alt=media&token=35cc26f6-c794-45c6-bea1-b1ea4fb8f5fb",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F4.jpg?alt=media&token=efe70d9c-f3bd-42e1-ae78-51f661212bdf",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F5.jpg?alt=media&token=2ae84b6c-43fe-4082-a4a2-c5d0308ed07e",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F6.jpg?alt=media&token=bb79bf58-0a4c-4756-bc89-389909702bd4",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F7.jpg?alt=media&token=d9032cfa-63ac-4264-bd66-7e3318a5afb1",
-  "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/certify%2F8.jpg?alt=media&token=714bdff2-131c-45c0-b515-be6098240acc",
-];
 const Home = () => {
   return (
     <div className="container">
