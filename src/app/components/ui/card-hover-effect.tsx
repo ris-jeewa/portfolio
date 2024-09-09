@@ -12,10 +12,11 @@ export const HoverEffect = ({
     title: string;
     description: string;
     image: string;
+    stack: string[];
   }[];
   className?: string;
 }) => {
-  // const stack = ["/anothershot.png", "/anothershot.png", "/anothershot.png"];
+  const stack = ["/anothershot.png", "/anothershot.png", "/anothershot.png"];
 
   return (
     <div
@@ -35,19 +36,18 @@ export const HoverEffect = ({
             className="w-full h-40 object-cover"
           />
           <CardTitle>{item.title}</CardTitle>
-          {/* <div className="">
-            {stack.map((item, index) => (
+          <div className="ml-4 flex flex-row -space-x-1">
+            {item.stack.map((tech, index) => (
               <div key={index} className="">
-                <Image
-                  height={100}
-                  width={100}
-                  src={item}
-                  alt={item}
-                  className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
-                />
+                <img
+                  height={20}
+                  width={20}
+                  src={tech}
+                  alt={tech}
+                  className="rounded-full h-6 w-6 shadow-[0_0_5px_white] relative z-1" />
               </div>
             ))}
-          </div> */}
+          </div>
           <CardDescription>{item.description}</CardDescription>
         </Card>
       ))}
@@ -104,7 +104,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm px-4 text-justify",
+        "mt-2 text-zinc-400 tracking-wide leading-relaxed text-sm px-4 text-justify",
         className
       )}
     >
