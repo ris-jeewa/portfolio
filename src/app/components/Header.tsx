@@ -7,7 +7,8 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export const HeaderSection = () => {
   const downloadCV = () => {
-    const url = "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/Risni%20Dheerasekara.pdf?alt=media&token=bf45eecb-fe0b-4feb-828f-2a2a3a440a6c";
+    const url =
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/Risni%20Dheerasekara.pdf?alt=media&token=bf45eecb-fe0b-4feb-828f-2a2a3a440a6c";
     const file = "RisniCV.pdf";
     const link = document.createElement("a");
     link.href = url;
@@ -22,7 +23,7 @@ export const HeaderSection = () => {
       <div className="w-[50%] md:w-[40%] justify-center align-center ml-[6rem]">
         <div className="transform rotate-[15deg] rounded-[5%] border-[2px] border-[var(--main-color)] shadow-[0_0_20px_var(--main-color)] bg-[var(--bg-color)] w-[150px] h-[150px] md:w-[250px] md:h-[280px] ">
           <img
-              src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile_img.png?alt=media&token=f96c6ef6-47f9-4fdf-9e02-df296f0ae6a8"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile_img.png?alt=media&token=f96c6ef6-47f9-4fdf-9e02-df296f0ae6a8"
             alt="image"
             className=" transform rotate-[-15deg] rounded-[5%] bg-[var(--main-color)] max-w-[250px] w-[150px] h-[160px] md:w-[310px] md:h-[280px]"
           />
@@ -43,7 +44,7 @@ export const HeaderSection = () => {
           onClick={downloadCV}
         >
           Download my CV
-          <IconArrowRight className="ml-4" size={15}/>
+          <IconArrowRight className="ml-4" size={15} />
         </HoverBorderGradient>
       </div>
     </div>

@@ -10,20 +10,21 @@ export const Portfolio = () => {
 export const projects = [
   {
     title: "MediSeek",
-    image: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile-img.png?alt=media&token=fe9696cf-6f97-431f-936d-36841f2a7e3c",
+    image:"https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/mediseek.png?alt=media&token=116d21df-ec2e-452b-b79a-7c362fa92d11", 
     description:
-      "This ongoing individual project is developing to target difficulty in finding a particular medicine. This application provides a facility to update available medicines from each pharmacy in Sri Lanka. Then if a patient needs a rare medicine they can search whether that medicine is available anywhere in Sri Lanka.",
+      "This ongoing individual project is developing to help patients easily find rare medicines within their country.",
+    
   },
   {
     title: "Anothershot",
-    image: "",
+    image:"https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/anothershot.png?alt=media&token=9440df16-34d9-4a45-831a-ffd842bea1f9",
     description:
-      " AnotherShot is a progressive web app revolutionizing photography bookings. It simplifies the process for clients to find and book photographers for various events while providing a stunning platform for photographers to showcase their portfolios",
+      "AnotherShot simplifies booking photographers and showcases their portfolios.This is the 2nd year software project."
   },
   {
     title: "Quick Chat",
-    image: "",
-    description:"Developed a modern, real-time chat application using React JS and Firebase. This project demonstrates my proficiency in front-end development and working with cloud services."
+    image: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/quickchat.jpeg?alt=media&token=7e885e3a-2433-4dcd-b6f0-5365f3065120",
+    description:"A real-time chat application for seamless communication."
   },
   
 ];

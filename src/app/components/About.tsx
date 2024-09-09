@@ -43,6 +43,10 @@ export const skills = [
     name: "Python",
     link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fpython.svg?alt=media&token=73f47ee1-9d4b-4778-8a6e-f140e5955d23",
   },
+  {
+    name:"Spring Boot",
+    link:"https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
+  }
 ];
 export const AboutMeSection = () => {
   return (

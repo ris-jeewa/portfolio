@@ -2,6 +2,7 @@ import { cn } from "@/app/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export const HoverEffect = ({
   items,
@@ -10,9 +11,11 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
+    image: string;
   }[];
   className?: string;
 }) => {
+  // const stack = ["/anothershot.png", "/anothershot.png", "/anothershot.png"];
 
   return (
     <div
@@ -22,11 +25,31 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        
-          <Card key={idx} className="h-[20rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 hover:-translate-x-1 md:hover:-translate-y-1 hover:scale-110 hover:border-yellow-500 duration-100">
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
+        <Card
+          key={idx}
+          className="h-[20rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 hover:-translate-x-1 md:hover:-translate-y-1 hover:scale-110 hover:border-yellow-500 duration-100"
+        >
+          <img
+            src={item.image}
+            alt="image"
+            className="w-full h-40 object-cover"
+          />
+          <CardTitle>{item.title}</CardTitle>
+          {/* <div className="">
+            {stack.map((item, index) => (
+              <div key={index} className="">
+                <Image
+                  height={100}
+                  width={100}
+                  src={item}
+                  alt={item}
+                  className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
+                />
+              </div>
+            ))}
+          </div> */}
+          <CardDescription>{item.description}</CardDescription>
+        </Card>
       ))}
     </div>
   );
@@ -42,12 +65,12 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-[250px] md:w-full p-4 overflow-hidden bg-black border border-transparent dark:border-gray/[0.2] group-hover:border-slate-700 relative z-20 ",
+        "rounded-2xl h-fit w-[250px] md:w-full overflow-hidden bg-black border border-transparent dark:border-gray/[0.2] group-hover:border-slate-700 relative z-20 ",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="">{children}</div>
       </div>
     </div>
   );
@@ -60,12 +83,16 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("bg-gradient-to-br from-white to-slate-500 py- bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent", className)}>
+    <h4
+      className={cn(
+        "bg-gradient-to-br from-white to-slate-500 py- bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent",
+        className
+      )}
+    >
       {children}
     </h4>
   );
 };
-
 
 export const CardDescription = ({
   className,
@@ -77,7 +104,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm px-4 text-justify",
         className
       )}
     >
