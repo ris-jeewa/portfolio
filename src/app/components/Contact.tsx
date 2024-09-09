@@ -39,8 +39,8 @@ export const Contact = () => {
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col gap-4">
-            {contact.map((contact, index) => (<>
-              <div className="flex justify-center flex-wrap" key={index}>
+            {contact.map((contact, index) => (<div key={index}>
+              <div className="flex justify-center flex-wrap" >
                 <input
                   id={contact.id}
                   name={contact.id}
@@ -55,7 +55,7 @@ export const Contact = () => {
               errors={state.errors}
               className="text-red-500 text-sm"
             />
-            </>
+            </div>
             ))}
             
         </div>

@@ -23,7 +23,7 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         
-          <Card key="idx" className="h-[20rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 hover:-translate-x-1 md:hover:-translate-y-1 hover:scale-110 hover:border-yellow-500 duration-100">
+          <Card key={idx} className="h-[20rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 hover:-translate-x-1 md:hover:-translate-y-1 hover:scale-110 hover:border-yellow-500 duration-100">
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
