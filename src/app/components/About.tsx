@@ -89,8 +89,7 @@ export const AboutMeSection = () => {
           <ul className="ml-[2rem] text-xsm md:text-md">
             <li>
               <span className="font-bold text-orange-200">
-                Degree Program 
-              </span>
+                Degree Program : </span>
               BSc (Hons) in Information Technology
             </li>
             <li>
@@ -110,20 +109,15 @@ export const AboutMeSection = () => {
           <ul className="ml-[2rem] text-base">
             <li>
               <span className="font-bold text-orange-200">
-                Duration of Study :
-              </span>
-              2005 - 2019
+                Duration of Study : </span>2005 - 2019
             </li>
             <li>
               <span className="font-bold text-orange-200">
-                O/L Medium and Results :
-              </span>
-              English Medium, 9 A's
+                O/L Medium and Results : </span>English Medium, 9 A&apos;s
             </li>
             <li>
               <span className="font-bold text-orange-200">
-                A/L Stream and Results :
-              </span>
+                A/L Stream and Results : </span>
               Mathematics Stream, AAB
             </li>
           </ul>
