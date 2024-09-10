@@ -13,6 +13,7 @@ export const HoverEffect = ({
     description: string;
     image: string;
     stack: string[];
+    github: { frontend: string; backend: string };
   }[];
   className?: string;
 }) => {
@@ -44,11 +45,23 @@ export const HoverEffect = ({
                   width={20}
                   src={tech}
                   alt={tech}
-                  className="rounded-full h-6 w-6 shadow-[0_0_5px_white] relative z-1" />
+                  className="rounded-full h-6 w-6 shadow-[0_0_5px_white] relative z-1"
+                />
               </div>
             ))}
           </div>
           <CardDescription>{item.description}</CardDescription>
+          <div className="absolute right-4 top-72 text-xs text-sky-400 underline-offset-4">
+            <Link href={item.github.frontend}>Frontend</Link>
+            {item.github.backend == "" ? (
+              ""
+            ) : (
+              <>
+                <span> | </span>
+                <Link href={item.github.backend}>Backend</Link>
+              </>
+            )}
+          </div>
         </Card>
       ))}
     </div>

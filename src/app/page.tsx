@@ -104,7 +104,7 @@ const Page = () => {
 
      <section className="portfolio" id="portfolio">
         <h1 className="mt-3 mb-3 bg-gradient-to-br from-yellow-300 to-slate-500 py- bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-5xl drop-shadow-lg font-extrabold">
-          Portfolio
+          Some of My Works
         </h1>
         <Portfolio />
       </section>
