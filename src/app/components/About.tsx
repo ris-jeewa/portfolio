@@ -44,9 +44,9 @@ export const skills = [
     link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fpython.svg?alt=media&token=73f47ee1-9d4b-4778-8a6e-f140e5955d23",
   },
   {
-    name:"Spring Boot",
-    link:"https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
-  }
+    name: "Spring Boot",
+    link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
+  },
 ];
 export const AboutMeSection = () => {
   return (
@@ -82,30 +82,51 @@ export const AboutMeSection = () => {
       </BackgroundGradient>
       <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-black dark:bg-zinc-900 ">
         <div className="uppercase md:text-2xl  text-yellow-100 ">Education</div>
-        <div className="mb-[4rem] ml-[2rem]">
+        <div className="mb-[1rem] ml-[2rem]">
           <div className="topic">
             University of Moratuwa <span>( 2022 - Present )</span>
           </div>
-          <p className="ml-[2rem] text-xsm md:text-md">
-            Pursuing a BSc (Hons) in Information Technology at the University of
-            Moratuwa, I&apos;m acquiring in-depth knowledge and practical skills
-            in IT. The university&apos;s rigorous academics and advanced
-            facilities prepare me to thrive in the rapidly evolving tech
-            industry.
-          </p>
+          <ul className="ml-[2rem] text-xsm md:text-md">
+            <li>
+              <span className="font-bold text-orange-200">
+                Degree Program :{" "}
+              </span>
+              BSc (Hons) in Information Technology
+            </li>
+            <li>
+              <span className="font-bold text-orange-200">CGPA : </span>3.93
+            </li>
+            <li>
+              <span className="font-bold text-orange-200">Focus : </span>
+              In-depth knowledge and practical skills in IT
+            </li>
+          </ul>
         </div>
 
         <div className="ml-[2rem]">
           <div className="topic">
             Sujatha Vidyalaya Matara <span>( 2005 - 2019 )</span>
           </div>
-          <p className="ml-[2rem]">
-            I attended Sujatha Vidyalaya in Matara from 2005 to 2019, excelling
-            in my Ordinary Level exams with 9 A&apos;s in English and achieving
-            AAB in the Mathematics stream for Advanced Levels. My education
-            there laid a solid foundation in academics and personal growth,
-            well-preparing me for higher education and future challenges.
-          </p>
+          <ul className="ml-[2rem] text-base">
+            <li>
+              <span className="font-bold text-orange-200">
+                Duration of Study :{" "}
+              </span>
+              2005 - 2019
+            </li>
+            <li>
+              <span className="font-bold text-orange-200">
+                O/L Medium and Results :{" "}
+              </span>
+              English Medium, 9 A's
+            </li>
+            <li>
+              <span className="font-bold text-orange-200">
+                A/L Stream and Results :{" "}
+              </span>
+              Mathematics Stream, AAB{" "}
+            </li>
+          </ul>
         </div>
       </BackgroundGradient>
 
@@ -121,7 +142,7 @@ export const AboutMeSection = () => {
                 alt="image"
                 className="rounded-md w-12 md-20"
               />
-              <p className="whitespace-nowrap  absolute md:top-18 top-14 mb-8">
+              <p className="whitespace-nowrap  absolute md:top-18 top-14 ">
                 {skill.name}
               </p>
             </div>
