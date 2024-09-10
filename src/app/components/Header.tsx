@@ -23,7 +23,7 @@ export const HeaderSection = () => {
       <div className="w-[50%] md:w-[40%] justify-center align-center ml-[6rem]">
         <div className="transform rotate-[15deg] rounded-[5%] border-[2px] border-[var(--main-color)] shadow-[0_0_20px_var(--main-color)] bg-[var(--bg-color)] w-[150px] h-[150px] md:w-[250px] md:h-[280px] ">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile_img.png?alt=media&token=f96c6ef6-47f9-4fdf-9e02-df296f0ae6a8"
+            src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile.jpg?alt=media&token=4432f3cb-3830-424d-9845-d30fd93b3016"
             alt="image"
             className=" transform rotate-[-15deg] rounded-[5%] bg-[var(--main-color)] max-w-[250px] w-[150px] h-[160px] md:w-[310px] md:h-[280px]"
           />
