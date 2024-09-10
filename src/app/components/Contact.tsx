@@ -46,7 +46,7 @@ export const Contact = () => {
                   name={contact.id}
                   placeholder={contact.label}
                   type={contact.type} 
-                  className="w-[300px] py-[0.9rem] px-[1rem] text-[0.9rem] rounded-lg bg-black transition ease-in-out delay-2 hover:-translate-y-1 hover:scale-110 duration-100 shadow-[0_0_3px_var(--main-color)]"
+                  className="w-[300px] py-[0.9rem] px-[1rem] text-[0.9rem] rounded-lg bg-black transition ease-in-out delay-2 hover:-translate-y-1 sm:hover:scale-105 duration-100 shadow-[0_0_3px_var(--main-color)]"
                 />
               </div>
               <ValidationError
@@ -64,7 +64,7 @@ export const Contact = () => {
             <textarea
               id="message"
               placeholder="Your Message:"
-              className="w-[300px] md:w-[400px] rounded-lg h-[200px] text-[0.9rem] bg-black rounded-lg transition ease-in-out delay-2 hover:-translate-y-1 hover:scale-110 duration-100 shadow-[0_0_3px_var(--main-color)] py-[1.7rem] px-[1rem]"
+              className="w-[300px] md:w-[400px] rounded-lg h-[200px] text-[0.9rem] bg-black rounded-lg transition ease-in-out delay-2 hover:-translate-y-1 sm:hover:scale-105 duration-100 shadow-[0_0_3px_var(--main-color)] py-[1.7rem] px-[1rem]"
             />
             <ValidationError
               prefix="Message"
