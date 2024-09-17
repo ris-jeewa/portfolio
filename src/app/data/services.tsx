@@ -43,18 +43,4 @@ export const content = [
       </div>
     ),
   },
-  {
-    title: "Testing & Debugging",
-    description:
-      "I provide thorough testing and debugging services to ensure your applications are reliable and error-free. By utilizing advanced tools and methodologies, I identify and fix issues promptly, ensuring optimal performance and a seamless user experience.",
-    content: (
-        <div className="flex items-center justify-center text-white">
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/test.jpg?alt=media&token=c4dca7c1-8b52-4805-90ed-1839c87203bd"
-          className="h-full w-[800px] object-fill"
-          alt="ui"
-        />
-      </div>
-    ),
-  },
 ];
