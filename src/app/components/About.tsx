@@ -93,7 +93,7 @@ export const AboutMeSection = () => {
               BSc (Hons) in Information Technology
             </li>
             <li>
-              <span className="font-bold text-orange-200">CGPA : </span>3.93
+              <span className="font-bold text-orange-200">CGPA : </span>3.95
             </li>
             <li>
               <span className="font-bold text-orange-200">Focus : </span>
