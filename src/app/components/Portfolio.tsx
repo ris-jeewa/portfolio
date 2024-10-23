@@ -1,13 +1,21 @@
+"use client";
+
 import { HoverEffect } from "../components/ui/card-hover-effect";
+import { Carousel } from "./ui/apple-cards-carousel";
+import Image from "next/image";
 
 export const Portfolio = () => {
+
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center mx-auto md:max-w-[70%]">
+    <div 
+    className="justify-center items-center mx-auto max-w-[70%]"
+    >
       <HoverEffect items={projects} />
     </div>
   );
 };
-export const projects = [
+
+const projects = [
   {
     title: "MediSeek",
     image:"https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/mediseek.png?alt=media&token=116d21df-ec2e-452b-b79a-7c362fa92d11", 
@@ -54,5 +62,6 @@ export const projects = [
       backend:""
     }
   },
+
   
 ];

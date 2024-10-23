@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
+import { Carousel } from "./apple-cards-carousel";
 
 export const HoverEffect = ({
   items,
@@ -17,53 +18,49 @@ export const HoverEffect = ({
   }[];
   className?: string;
 }) => {
-  const stack = ["/anothershot.png", "/anothershot.png", "/anothershot.png"];
 
-  return (
-    <div
-      className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10 gap-10",
-        className
-      )}
+  const cards = items.map((item, idx) => (
+    <Card
+      key={idx}
+      className="w-[15rem] h-[22rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 :-translate-x-1 hover:border-yellow-800 "
     >
-      {items.map((item, idx) => (
-        <Card
-          key={idx}
-          className="h-[20rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 hover:-translate-x-1 md:hover:-translate-y-1 hover:scale-110 hover:border-yellow-500 duration-100"
-        >
-          <img
-            src={item.image}
-            alt="image"
-            className="w-full h-40 object-cover"
-          />
-          <CardTitle>{item.title}</CardTitle>
-          <div className="ml-4 flex flex-row -space-x-1">
-            {item.stack.map((tech, index) => (
-              <div key={index} className="">
-                <img
-                  height={20}
-                  width={20}
-                  src={tech}
-                  alt={tech}
-                  className="rounded-full h-6 w-6 shadow-[0_0_5px_white] relative z-1"
-                />
-              </div>
-            ))}
+      <img
+        src={item.image}
+        alt="image"
+        className="w-full h-40 object-cover"
+      />
+      <CardTitle>{item.title}</CardTitle>
+      <div className="ml-4 flex flex-row -space-x-1">
+        {item.stack.map((tech, index) => (
+          <div key={index} className="">
+            <img
+              height={20}
+              width={20}
+              src={tech}
+              alt={tech}
+              className="rounded-full h-6 w-6 shadow-[0_0_5px_white] relative z-1"
+            />
           </div>
-          <CardDescription>{item.description}</CardDescription>
-          <div className="absolute right-4 top-72 text-xs text-sky-400 underline-offset-4">
-            <Link href={item.github.frontend}>Frontend</Link>
-            {item.github.backend == "" ? (
-              ""
-            ) : (
-              <>
-                <span> | </span>
-                <Link href={item.github.backend}>Backend</Link>
-              </>
-            )}
-          </div>
-        </Card>
-      ))}
+        ))}
+      </div>
+      <CardDescription>{item.description}</CardDescription>
+      <div className="absolute right-4 top-80 text-xs text-sky-400 underline-offset-4">
+        <Link href={item.github.frontend}>Frontend</Link>
+        {item.github.backend == "" ? (
+          ""
+        ) : (
+          <>
+            <span> | </span>
+            <Link href={item.github.backend}>Backend</Link>
+          </>
+        )}
+      </div>
+    </Card>
+  ))
+  return (
+    <div className="" 
+    >
+      <Carousel items={cards} />
     </div>
   );
 };
@@ -78,7 +75,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-fit w-[250px] md:w-full overflow-hidden bg-black border border-transparent dark:border-gray/[0.2] group-hover:border-slate-700 relative z-20 ",
+        "rounded-2xl h-fit w-[200px] overflow-hidden bg-black border border-transparent dark:border-gray/[0.2] group-hover:border-slate-700 relative z-20 ",
         className
       )}
     >
