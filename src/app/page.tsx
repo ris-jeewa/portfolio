@@ -5,8 +5,6 @@ import "./styles/home.css";
 import { Vortex } from "./components/ui/vortex";
 import Link from "next/link";
 import { TracingBeam } from "./components/ui/tracing-beam";
-import { StickyScroll } from "./components/ui/sticky-scroll-reveal";
-import { content } from "./data/services";
 import { Contact } from "./components/Contact";
 import { navItems, words1, words2 } from "./data/header";
 import { HeaderSection } from "./components/Header";
@@ -109,12 +107,6 @@ const Page = () => {
         <Portfolio />
       </section>
 
-      <section className="services" id="services">
-        <h1 className="section-title mt-1 mb-6 text-center text-3xl md:text-5xl">
-          What I Do
-        </h1>
-        <StickyScroll content={content} />
-      </section>
 
       <section className="contact" id="contact">
         <h1 className="section-title mt-1 mb-10 text-center text-3xl md:text-5xl">
