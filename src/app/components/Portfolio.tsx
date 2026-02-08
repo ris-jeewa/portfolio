@@ -129,10 +129,6 @@ export const Portfolio = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 sm:px-6">
       <div className="rounded-2xl border border-[var(--second-color)]/30 bg-[var(--second-bg-color)]/80 p-6 md:p-8 shadow-xl">
-        <h2 className="mb-6 text-xl font-semibold text-[var(--text-color)] md:text-2xl">
-          Projects
-        </h2>
-
         <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="relative flex-1 max-w-md">
             <IconSearch
