@@ -35,13 +35,13 @@ export const HeaderSection = () => {
           Full-stack developer focused on building scalable web applications. I enjoy turning complex problems into simple solutions and collaborating with teams to ship quality software.
         </p>
         <HoverBorderGradient
-          containerClassName="rounded-lg w-[180px] md:w-[200px] md:h-[48px] h-[44px]"
+          containerClassName="rounded-full w-[200px] h-[48px]"
           as="button"
-          className="bg-[var(--bg-color)] text-white flex items-center justify-center gap-2 text-sm font-medium border border-[var(--main-color)]/30"
+          className="bg-gradient-to-r from-[var(--main-color)] to-rose-500 text-white flex items-center justify-center gap-2 text-sm font-semibold border-0"
           onClick={downloadCV}
         >
-          View resume
-          <IconArrowRight size={16} />
+          Download my CV
+          <IconArrowRight size={18} />
         </HoverBorderGradient>
       </div>
     </div>
