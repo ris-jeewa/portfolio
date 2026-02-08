@@ -7,7 +7,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export const HeaderSection = () => {
   const downloadCV = () => {
-    const url ="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/Risni%20Dheerasekara.pdf?alt=media&token=1ebe7064-8f71-4321-bfab-75856a1fcf86"
+    const url ="https://drive.google.com/file/d/11XlXtx47x8djLeHi0iWDsEK2tMTpyIZ4/view?usp=sharing"
     const file = "RisniCV.pdf";
     const link = document.createElement("a");
     link.href = url;
@@ -18,32 +18,30 @@ export const HeaderSection = () => {
   };
 
   return (
-    <div className="justify-center flex flex-col md:flex-row md:gap-0 gap-[2rem] align-center mt-[4rem]">
-      <div className="w-[50%] md:w-[40%] justify-center align-center ml-[6rem]">
-        <div className="transform rotate-[15deg] rounded-[5%] border-[2px] border-[var(--main-color)] shadow-[0_0_20px_var(--main-color)] bg-[var(--bg-color)] w-[150px] h-[150px] md:w-[250px] md:h-[280px] ">
+    <div className="justify-center flex flex-col md:flex-row md:gap-12 gap-8 align-center mt-[4rem]">
+      <div className="w-[50%] md:w-[36%] justify-center align-center ml-[6rem]">
+        <div className="transform rotate-[6deg] rounded-xl border border-[var(--main-color)]/40 bg-[var(--second-bg-color)] w-[150px] h-[150px] md:w-[240px] md:h-[260px] overflow-hidden">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile.jpg?alt=media&token=4432f3cb-3830-424d-9845-d30fd93b3016"
-            alt="image"
-            className=" transform rotate-[-15deg] rounded-[5%] bg-[var(--main-color)] max-w-[250px] w-[150px] h-[160px] md:w-[310px] md:h-[280px]"
+            alt="Risni Dheerasekara"
+            className="transform rotate-[-6deg] scale-110 rounded-xl object-cover w-full h-full"
           />
         </div>
       </div>
-      <div className="h-[250px] w-[90%] md:w-[40%] flex flex-col text-left justify-center relative bg-[rgba(145,147,149,0.4)] py-0 px-[3rem] rounded-2xl ">
+      <div className="min-h-[220px] w-[90%] md:w-[44%] flex flex-col text-left justify-center relative bg-[var(--second-bg-color)]/80 backdrop-blur border border-[var(--second-color)]/20 py-6 px-6 md:px-8 rounded-xl">
         <TypewriterEffectSmooth words={words1} delay={1} />
         <TypewriterEffectSmooth words={words2} delay={4} />
-        <p className="mb-4">
-          A quick learner and problem-solver, passionate about full-stack
-          development, proactive in facing challenges, and fostering teamwork
-          for effective collaboration.
+        <p className="text-[var(--second-color)] text-sm md:text-base leading-relaxed mb-5 mt-1">
+          Full-stack developer focused on building scalable web applications. I enjoy turning complex problems into simple solutions and collaborating with teams to ship quality software.
         </p>
         <HoverBorderGradient
-          containerClassName="rounded-full absolute bottom-3 right-6 w-[180px] md:w-[200px] md:h-[50px] h-[40px] "
+          containerClassName="rounded-lg w-[180px] md:w-[200px] md:h-[48px] h-[44px]"
           as="button"
-          className="bg-black text-white flex items-center md:space-x-2 "
+          className="bg-[var(--bg-color)] text-white flex items-center justify-center gap-2 text-sm font-medium border border-[var(--main-color)]/30"
           onClick={downloadCV}
         >
-          Download my CV
-          <IconArrowRight className="ml-4" size={15} />
+          View resume
+          <IconArrowRight size={16} />
         </HoverBorderGradient>
       </div>
     </div>

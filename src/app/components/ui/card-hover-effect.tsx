@@ -22,7 +22,7 @@ export const HoverEffect = ({
   const cards = items.map((item, idx) => (
     <Card
       key={idx}
-      className="w-[15rem] h-[22rem] shadow-[0_0_10px_var(--main-color)] transition ease-in-out delay-2 :-translate-x-1 hover:border-yellow-800 "
+      className="w-[15rem] h-[22rem] border border-[var(--second-color)]/20 transition duration-200 hover:border-[var(--main-color)]/50 hover:shadow-[0_0_24px_var(--accent-glow)]"
     >
       <img
         src={item.image}

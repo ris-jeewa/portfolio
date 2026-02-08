@@ -1,61 +1,53 @@
 import {
-    IconMessage,
     IconUser,
+    IconCode,
+    IconBriefcase,
+    IconTool,
+    IconMail,
   } from "@tabler/icons-react";
 
 export const navItems = [
     {
       name: "Home",
       link: "#home",
-      icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white " />,
+      icon: <IconCode className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "About Me",
+      name: "About",
       link: "#aboutme",
-      icon: (
-        <IconUser className="h-4 w-4 text-neutral-500 dark:text-white inline" />
-      ),
+      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Portfolio",
+      name: "Projects",
       link: "#portfolio",
-      icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Services",
+      name: "Expertise",
       link: "#services",
-      icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconTool className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
       link: "#contact",
-      icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconMail className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
   
   export const words1 = [
+    { text: "Hi, " },
+    { text: "I'm " },
     {
-      text: "Hello, ",
-    },
-    {
-      text: "I'm",
-    },
-    {
-      text: "Risni",
-      className: "text-yellow-500 dark:text-blue-500 /n",
+      text: "Risni Dheerasekara",
+      className: "text-[var(--main-color)]",
     },
   ];
   
   export const words2 = [
+    { text: "Software " },
     {
-      text: "An",
-    },
-    {
-      text: "IT",
-    },
-    {
-      text: "Student",
-      className: "text-yellow-500 dark:text-blue-500 /n",
+      text: "Engineer",
+      className: "text-[var(--main-color)]",
     },
   ];
   

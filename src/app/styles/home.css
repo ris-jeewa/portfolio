@@ -1,19 +1,35 @@
 .navbar a {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   color: var(--text-color);
   margin-left: 1.5rem;
   font-weight: 500;
-  transition: 0.3s ease;
-  border-bottom: 3px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
+  border-bottom-color: var(--main-color);
 }
+
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+
+.section-label {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
 }
 
 .topic span {
@@ -22,11 +38,11 @@ section {
 }
 
 #media:hover {
-  transform: scale(1.5);
-  transition: 0.3s ease;
+  transform: scale(1.15);
+  transition: transform 0.2s ease;
   cursor: pointer;
+  color: var(--main-color);
 }
-
 
 .topic {
   font-size: large;
@@ -37,38 +53,40 @@ section {
 }
 
 .services {
-  width: full;
+  width: 100%;
   left: 0;
   right: 0;
 }
 
-.footer{
-  .horizontal {
-    border-top: 2px solid var(--second-color);
-    margin: 20px 300px;
-  }
-  h3 {
-    span{
-      color:white;
-    }
-  }
+.footer {
+  padding-top: 1rem;
+}
+.footer .horizontal {
+  border-top: 1px solid var(--second-color);
+  margin: 0 auto 1.25rem;
+  max-width: 640px;
+  opacity: 0.6;
+}
+.footer h3 {
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.footer h3 span {
+  color: var(--main-color);
+}
+.footer {
   color: var(--second-color);
   text-align: center;
-  font-size:12px;
 }
 
 
 @media only screen and (max-width: 768px) {
   #media {
     width: 15px;
-    transform: scale(1.5);
-    transition: 0.3s ease;
-    cursor: pointer;
   }
   #avatar {
     display: flexbox;
   }
-
   .navbar {
     display: none;
   }
@@ -78,5 +96,4 @@ section {
   .topic {
     font-size: medium;
   }
- 
 }

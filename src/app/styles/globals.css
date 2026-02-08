@@ -10,15 +10,17 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "poppins", sans-serif;
+  font-family: "Inter", "system-ui", sans-serif;
 }
 
 :root {
-  --bg-color:#080808;
-  --second-bg-color:#131313;
-  --text-color:#fff;
-  --main-color:#FFD500;
-  --second-color:#83828e;
+  --bg-color: #0a0a0f;
+  --second-bg-color: #12121a;
+  --text-color: #e2e8f0;
+  --main-color: #06b6d4;
+  --accent-glow: rgba(6, 182, 212, 0.4);
+  --second-color: #64748b;
+  --section-label: #94a3b8;
 }
 
 html {

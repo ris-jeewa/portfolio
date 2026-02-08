@@ -29,13 +29,17 @@ const contact = [
 export const Contact = () => {
   const [state, handleSubmit] = useForm("xgeggowb");
   if (state.succeeded) {
-    return <p className="text-center text-yellow-500 flex justify-center align-center items-center shadow-[0_0_18px_var(--main-color)] rounded-full py-3 px-4">Received With Thanks! <span ><IconHeart /></span></p>;
+    return (
+      <p className="text-center text-[var(--main-color)] flex justify-center items-center gap-2 rounded-lg py-3 px-4 border border-[var(--main-color)]/30">
+        Thanks for your message! <IconHeart size={18} />
+      </p>
+    );
   }
 
   return (
     <>
       <form
-        className="flex flex-col md:flex-row md:gap-[5rem] gap-[1rem] bg-black align-center justify-center text-center"
+        className="flex flex-col md:flex-row md:gap-12 gap-6 justify-center text-center"
         onSubmit={handleSubmit}
       >
         <div className="flex flex-col gap-4">
@@ -46,7 +50,7 @@ export const Contact = () => {
                   name={contact.id}
                   placeholder={contact.label}
                   type={contact.type} 
-                  className="w-[300px] py-[0.9rem] px-[1rem] text-[0.9rem] rounded-lg bg-black transition ease-in-out delay-2 hover:-translate-y-1 sm:hover:scale-105 duration-100 shadow-[0_0_3px_var(--main-color)]"
+                  className="w-[300px] py-[0.9rem] px-[1rem] text-[0.9rem] rounded-lg bg-[var(--second-bg-color)] border border-[var(--second-color)]/30 focus:border-[var(--main-color)] transition-colors duration-200"
                 />
               </div>
               <ValidationError
@@ -64,7 +68,7 @@ export const Contact = () => {
             <textarea
               id="message"
               placeholder="Your Message:"
-              className="w-[300px] md:w-[400px] rounded-lg h-[200px] text-[0.9rem] bg-black rounded-lg transition ease-in-out delay-2 hover:-translate-y-1 sm:hover:scale-105 duration-100 shadow-[0_0_3px_var(--main-color)] py-[1.7rem] px-[1rem]"
+              className="w-[300px] md:w-[400px] rounded-lg h-[200px] text-[0.9rem] bg-[var(--second-bg-color)] border border-[var(--second-color)]/30 focus:border-[var(--main-color)] transition-colors duration-200 py-4 px-4 resize-none"
             />
             <ValidationError
               prefix="Message"
@@ -73,25 +77,14 @@ export const Contact = () => {
             />
 
           <button
-            className="mt-[3rem] md:mt-[1rem] w-[200px] bg-yellow-500 py-1.3 rounded-full font-bold text-lg transition hover:scale-125 duration-300 shadow-yellow-500 shadow-md "
+            className="mt-6 md:mt-4 w-[200px] bg-[var(--main-color)] text-[var(--bg-color)] py-3 rounded-lg font-semibold text-sm transition hover:opacity-90 duration-200 disabled:opacity-50"
             type="submit"
             disabled={state.submitting}
           >
-            Send &rarr;
-            <BottomGradient />
+            Send message &rarr;
           </button>
         </div>
       </form>
     </>
   );
 };
-
-const BottomGradient = () => {
-  return (
-    <>
-      <span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
-      <span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-yellow-500 to-transparent" />
-    </>
-  );
-};
-

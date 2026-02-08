@@ -51,9 +51,9 @@ export const skills = [
 export const AboutMeSection = () => {
   return (
     <div className=" w-[250px] gap-10 md:w-[800px] flex flex-col justify-center max-w-5xl mx-auto h-full max-h-full mt-[4rem] ">
-      <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-black dark:bg-zinc-900 ">
-        <div className="uppercase md:text-2xl text-yellow-100 ">
-          Personal Infos
+      <BackgroundGradient className="rounded-xl p-6 sm:p-10 bg-[var(--second-bg-color)] border border-[var(--second-color)]/20">
+        <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)]">
+          Personal Info
         </div>
         <div className="grid md:grid-cols-2 text-xsm md:text-md ml-[5%]">
           <p>
@@ -80,23 +80,23 @@ export const AboutMeSection = () => {
           </p>
         </div>
       </BackgroundGradient>
-      <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-black dark:bg-zinc-900 ">
-        <div className="uppercase md:text-2xl  text-yellow-100 ">Education</div>
+      <BackgroundGradient className="rounded-xl p-6 sm:p-10 bg-[var(--second-bg-color)] border border-[var(--second-color)]/20">
+        <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)]">Education</div>
         <div className="mb-[1rem] ml-[2rem]">
           <div className="topic">
             University of Moratuwa <span>( 2022 - Present )</span>
           </div>
           <ul className="ml-[2rem] text-xsm md:text-md">
             <li>
-              <span className="font-bold text-orange-200">
+              <span className="font-bold text-[var(--main-color)]">
                 Degree Program : </span>
               BSc (Hons) in Information Technology
             </li>
             <li>
-              <span className="font-bold text-orange-200">CGPA : </span>3.95
+              <span className="font-bold text-[var(--main-color)]">CGPA : </span>3.95
             </li>
             <li>
-              <span className="font-bold text-orange-200">Focus : </span>
+              <span className="font-bold text-[var(--main-color)]">Focus : </span>
               In-depth knowledge and practical skills in IT
             </li>
           </ul>
@@ -108,15 +108,15 @@ export const AboutMeSection = () => {
           </div>
           <ul className="ml-[2rem] text-base">
             <li>
-              <span className="font-bold text-orange-200">
+              <span className="font-bold text-[var(--main-color)]">
                 Duration of Study : </span>2005 - 2019
             </li>
             <li>
-              <span className="font-bold text-orange-200">
+              <span className="font-bold text-[var(--main-color)]">
                 O/L Medium and Results : </span>English Medium, 9 A&apos;s
             </li>
             <li>
-              <span className="font-bold text-orange-200">
+              <span className="font-bold text-[var(--main-color)]">
                 A/L Stream and Results : </span>
               Mathematics Stream, AAB
             </li>
@@ -124,8 +124,8 @@ export const AboutMeSection = () => {
         </div>
       </BackgroundGradient>
 
-      <BackgroundGradient className="rounded-[22px] p-4 sm:p-10 bg-black dark:bg-zinc-900  ">
-        <div className="uppercase md:text-2xl text-yellow-100 ">Experience</div>
+      <BackgroundGradient className="rounded-xl p-6 sm:p-10 bg-[var(--second-bg-color)] border border-[var(--second-color)]/20">
+        <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)]">Tech Stack</div>
         <div className="place-content-center md:gap-20 gap-10 grid md:grid-rows-2 grid-rows-4 grid-flow-col ">
           {skills.map((skill, index) => (
             <div key={index} className="flex flex-col relative">
