@@ -94,7 +94,7 @@ const Page = () => {
        <TracingBeam>
         <section className="aboutme" id="aboutme">
           <h1 className="section-title mt-1 text-center text-3xl md:text-5xl">
-            About Me
+            About 
           </h1>
           <AboutMeSection />
         </section>
