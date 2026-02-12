@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { IconSearch, IconBrandGithub } from "@tabler/icons-react";
+import { IconSearch, IconBrandGithub, IconWorld } from "@tabler/icons-react";
 import { cn } from "../utils/cn";
 
 export type ProjectItem = {
@@ -12,25 +12,30 @@ export type ProjectItem = {
   stack: string[];
   techs: string[];
   github: { frontend: string; backend: string };
+  live?: string;
 };
 
 const projects: ProjectItem[] = [
   {
     title: "MediSeek",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/mediseek.png?alt=media&token=116d21df-ec2e-452b-b79a-7c362fa92d11",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568159/portfolio/Screenshot_2026-02-08_215050_aotwhu.png",
     description:
       "Helps patients find rare medicines within their country. Ongoing individual project.",
-    techs: ["Spring Boot", "Next.js", "SQL"],
+    techs: ["Spring Boot", "Next.js", "SQL", "Apache Kafka", "Grafana", "Azure", "Vercel"],
     stack: [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnext.jpeg?alt=media&token=63069384-b9b4-4c87-834b-b2def273a1e0",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fsql.jpeg?alt=media&token=f402d85c-c0e2-4075-acbb-d0244fd6e4a3",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568705/portfolio/download_amqhnf.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568761/portfolio/images_shmnfl.jpg",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568761/portfolio/images_shmnfl.jpg",
     ],
     github: {
       frontend: "https://github.com/ris-jeewa/mediseek-frontend",
       backend: "https://github.com/ris-jeewa/mediseek-backend",
     },
+    live: "https://mediseek-ozpnk3vi6-ris-jeewas-projects.vercel.app/"
   },
   {
     title: "Anothershot",
@@ -129,10 +134,6 @@ export const Portfolio = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 sm:px-6">
       <div className="rounded-2xl border border-[var(--second-color)]/30 bg-[var(--second-bg-color)]/80 p-6 md:p-8 shadow-xl">
-        <h2 className="mb-6 text-xl font-semibold text-[var(--text-color)] md:text-2xl">
-          Projects
-        </h2>
-
         <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="relative flex-1 max-w-md">
             <IconSearch
@@ -242,6 +243,17 @@ function ProjectCard({ project }: { project: ProjectItem }) {
             >
               <IconBrandGithub size={14} />
               Backend
+            </Link>
+          )}
+          {project.live && (
+            <Link
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[var(--main-color)] hover:underline"
+            >
+              <IconWorld size={14} />
+              Live
             </Link>
           )}
         </div>

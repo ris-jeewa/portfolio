@@ -19,12 +19,14 @@ export const HeaderSection = () => {
 
   return (
     <div className="justify-center flex flex-col md:flex-row md:gap-12 gap-8 align-center mt-[4rem]">
-      <div className="w-[50%] md:w-[36%] justify-center align-center ml-[6rem]">
-        <div className="transform rotate-[6deg] rounded-xl border border-[var(--main-color)]/40 bg-[var(--second-bg-color)] w-[150px] h-[150px] md:w-[240px] md:h-[260px] overflow-hidden">
+      <div className="flex-shrink-0 flex justify-center md:justify-end order-1 md:order-2">
+        <div className="relative w-[200px] h-[240px] sm:w-[260px] sm:h-[300px] md:w-[300px] md:h-[360px] rounded-[1.75rem] overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)]">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile.jpg?alt=media&token=4432f3cb-3830-424d-9845-d30fd93b3016"
             alt="Risni Dheerasekara"
-            className="transform rotate-[-6deg] scale-110 rounded-xl object-cover w-full h-full"
+            className="w-full h-full object-cover object-top"
+            width={300}
+            height={360}
           />
         </div>
       </div>
@@ -35,13 +37,13 @@ export const HeaderSection = () => {
           Full-stack developer focused on building scalable web applications. I enjoy turning complex problems into simple solutions and collaborating with teams to ship quality software.
         </p>
         <HoverBorderGradient
-          containerClassName="rounded-lg w-[180px] md:w-[200px] md:h-[48px] h-[44px]"
+          containerClassName="rounded-full w-[200px] h-[48px]"
           as="button"
-          className="bg-[var(--bg-color)] text-white flex items-center justify-center gap-2 text-sm font-medium border border-[var(--main-color)]/30"
+          className="bg-gradient-to-r from-[var(--main-color)] to-rose-500 text-white flex items-center justify-center gap-2 text-sm font-semibold border-0"
           onClick={downloadCV}
         >
-          View resume
-          <IconArrowRight size={16} />
+          Download my CV
+          <IconArrowRight size={18} />
         </HoverBorderGradient>
       </div>
     </div>

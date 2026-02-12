@@ -5,7 +5,7 @@ import { IconHeart } from "@tabler/icons-react";
 
 const contact = [
   {
-    label: "Full Name:",
+    label: "Name:",
     id: "name",
     type: "text",
   },
