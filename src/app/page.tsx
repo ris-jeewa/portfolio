@@ -5,6 +5,7 @@ import "./styles/home.css";
 import { Vortex } from "./components/ui/vortex";
 import Link from "next/link";
 import { TracingBeam } from "./components/ui/tracing-beam";
+import { StickyScroll } from "./components/ui/sticky-scroll-reveal";
 import { Contact } from "./components/Contact";
 import { navItems, words1, words2 } from "./data/header";
 import { HeaderSection } from "./components/Header";
@@ -16,7 +17,7 @@ import { Portfolio } from "./components/Portfolio";
 
 const Home = () => {
   return (
-    <div className="container">
+    <div>
       <FloatingNav navItems={navItems} />
       <Page />
     </div>
@@ -94,7 +95,7 @@ const Page = () => {
        <TracingBeam>
         <section className="aboutme" id="aboutme">
           <h1 className="section-title mt-1 text-center text-3xl md:text-5xl">
-            About 
+            About
           </h1>
           <AboutMeSection />
         </section>
@@ -106,7 +107,6 @@ const Page = () => {
         </h1>
         <Portfolio />
       </section>
-
 
       <section className="contact" id="contact">
         <h1 className="section-title mt-1 mb-10 text-center text-3xl md:text-5xl">
