@@ -38,6 +38,39 @@ const projects: ProjectItem[] = [
     live: "https://mediseek-ozpnk3vi6-ris-jeewas-projects.vercel.app/"
   },
   {
+    title: "FreeLynk",
+    image:
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774019024/portfolio/Screenshot_2026-03-20_202240_omtht7.png",
+    description:
+      "Full-stack marketplace connecting clients with freelancers. OAuth2/OIDC via WSO2 Identity Server, user profiles (Cloudinary), project/job workflows, and milestone tracking.",
+    techs: ["Spring Boot", "React", "WSO2 Identity Server", "Cloudinary", "OAuth2", "OIDC"],
+    stack: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Freact.svg?alt=media&token=dff6fa70-0756-4302-97c3-537331ba3f1b",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fcloudinary.svg?alt=media&token=27dbb89c-75dd-4eba-894c-1daba1dce239",
+    ],
+    github: {
+      frontend: "https://github.com/ris-jeewa",
+      backend: "https://github.com/ris-jeewa",
+    },
+  },
+  {
+    title: "Inventory & Order Management",
+    image:
+      "https://placehold.co/800x450/12121a/06b6d4?text=Inventory+API&font=inter",
+    description:
+      "Scalable RESTful Web API for product, order, inventory, and warehouse management with RBAC via WSO2 API Manager and Grafana-based real-time monitoring.",
+    techs: ["ASP.NET Core", ".NET 8", "WSO2 API Manager", "Grafana", "PostgreSQL", "Swagger", "RBAC"],
+    stack: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftypescript.svg?alt=media&token=d190a918-c630-4c41-9b4c-5d7e725d99ab",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
+    ],
+    github: {
+      frontend: "",
+      backend: "https://github.com/ris-jeewa",
+    },
+  },
+  {
     title: "Anothershot",
     image:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/anothershot.png?alt=media&token=9440df16-34d9-4a45-831a-ffd842bea1f9",
@@ -224,16 +257,18 @@ function ProjectCard({ project }: { project: ProjectItem }) {
             </span>
           ))}
         </div>
-        <div className="mt-3 flex gap-3 text-xs">
-          <Link
-            href={project.github.frontend}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-[var(--main-color)] hover:underline"
-          >
-            <IconBrandGithub size={14} />
-            Frontend
-          </Link>
+        <div className="mt-3 flex gap-3 text-xs flex-wrap">
+          {project.github.frontend && (
+            <Link
+              href={project.github.frontend}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-[var(--main-color)] hover:underline"
+            >
+              <IconBrandGithub size={14} />
+              Frontend
+            </Link>
+          )}
           {project.github.backend && (
             <Link
               href={project.github.backend}
