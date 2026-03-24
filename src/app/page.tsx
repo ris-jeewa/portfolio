@@ -43,7 +43,7 @@ const Page = () => {
 
             <div id="avatar">
             <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/avatar.svg?alt=media&token=4ec0b73f-bba6-4c2b-bdc9-a6f63b9d9e4f"
+            src="https://res.cloudinary.com/dcn64hytu/image/upload/v1774341721/portfolio/avatar_jtfiuw.svg"
               alt="image"
               className="md:h-13 md:w-13 w-10 h-10 ring-2 ring-[var(--main-color)]/50 rounded-full object-cover"
               width={60}

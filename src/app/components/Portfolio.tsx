@@ -24,10 +24,10 @@ const projects: ProjectItem[] = [
       "Helps patients find rare medicines within their country. Ongoing individual project.",
     techs: ["Spring Boot", "Next.js", "SQL", "Apache Kafka", "Grafana", "Azure", "Vercel"],
     stack: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnext.jpeg?alt=media&token=63069384-b9b4-4c87-834b-b2def273a1e0",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fsql.jpeg?alt=media&token=f402d85c-c0e2-4075-acbb-d0244fd6e4a3",
-      "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568705/portfolio/download_amqhnf.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/c_crop,ar_1:1/v1774288314/portfolio/SB_oupitp.webp",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774288529/portfolio/nextjs_siqrfa.webp",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774339641/portfolio/mysql_rsxoen.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/c_crop,ar_1:1/v1774339546/portfolio/kafka_epj5wk.png",
       "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568761/portfolio/images_shmnfl.jpg",
       "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568761/portfolio/images_shmnfl.jpg",
     ],
@@ -45,9 +45,9 @@ const projects: ProjectItem[] = [
       "Full-stack marketplace connecting clients with freelancers. OAuth2/OIDC via WSO2 Identity Server, user profiles (Cloudinary), project/job workflows, and milestone tracking.",
     techs: ["Spring Boot", "React", "WSO2 Identity Server", "Cloudinary", "OAuth2", "OIDC"],
     stack: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Freact.svg?alt=media&token=dff6fa70-0756-4302-97c3-537331ba3f1b",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fcloudinary.svg?alt=media&token=27dbb89c-75dd-4eba-894c-1daba1dce239",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/c_crop,ar_1:1/v1774288314/portfolio/SB_oupitp.webp",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774288880/portfolio/react_cjjstw.jpg",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/c_crop,ar_1:1/v1774328213/portfolio/cloudinary_z08igt.png",
     ],
     github: {
       frontend: "https://github.com/ris-jeewa",
@@ -62,8 +62,8 @@ const projects: ProjectItem[] = [
       "Scalable RESTful Web API for product, order, inventory, and warehouse management with RBAC via WSO2 API Manager and Grafana-based real-time monitoring.",
     techs: ["ASP.NET Core", ".NET 8", "WSO2 API Manager", "Grafana", "PostgreSQL", "Swagger", "RBAC"],
     stack: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftypescript.svg?alt=media&token=d190a918-c630-4c41-9b4c-5d7e725d99ab",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774338017/portfolio/.net_hdidtu.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1770568761/portfolio/images_shmnfl.jpg",
     ],
     github: {
       frontend: "",
@@ -73,20 +73,15 @@ const projects: ProjectItem[] = [
   {
     title: "Anothershot",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/anothershot.png?alt=media&token=9440df16-34d9-4a45-831a-ffd842bea1f9",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340383/portfolio/anothershot_bg62ky.png",
     description:
       "Book photographers and showcase portfolios. 2nd year software project.",
     techs: ["Next.js", "NestJS", "TypeScript", "Tailwind", "MongoDB", "Prisma", "Vercel", "Azure"],
     stack: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnext.jpeg?alt=media&token=63069384-b9b4-4c87-834b-b2def273a1e0",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnest.svg?alt=media&token=de7403a8-7451-4ec3-8a98-32555ab198cb",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fcloudinary.svg?alt=media&token=27dbb89c-75dd-4eba-894c-1daba1dce239",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fmongo.png?alt=media&token=9dc32b0d-d77b-4f55-b0ee-807f1b36098c",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fprisma.jpeg?alt=media&token=a3af1df1-3344-4c5f-948e-64e4a61be7f3",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftypescript.svg?alt=media&token=d190a918-c630-4c41-9b4c-5d7e725d99ab",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftailwind.png?alt=media&token=d08c76b0-ca3d-4ff4-b145-2b7b2d16644e",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fvercel.png?alt=media&token=9a6257dd-4b8f-4af9-9dec-8e2aeab07e5a",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fazure.jpeg?alt=media&token=a88c24f9-4f98-40c1-ad98-4bc7e0c8c4ad",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774339168/portfolio/nest_js_upughx.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774288529/portfolio/nextjs_siqrfa.webp",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774338730/portfolio/prisma_fbcueu.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/c_crop,ar_1:1/v1774338781/portfolio/mongoDB_n2dtkj.png",
     ],
     github: {
       frontend: "https://github.com/NerdLabs-UoM/anothershot-frontend",
@@ -96,16 +91,17 @@ const projects: ProjectItem[] = [
   {
     title: "Quick Chat",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/quickchat.jpeg?alt=media&token=7e885e3a-2433-4dcd-b6f0-5365f3065120",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340384/portfolio/quickchat_rwi6oc.jpg",
     description:
       "Real-time web chat. Create an account and chat with other users.",
     techs: ["React", "Firebase", "Sass", "Vite"],
     stack: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Freact.svg?alt=media&token=dff6fa70-0756-4302-97c3-537331ba3f1b",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ffirebase.png?alt=media&token=dd30cc04-ce6c-4c32-ae27-c763bb988b3b",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fscss.png?alt=media&token=85390ad3-201e-44a6-87f3-cbea69b9f1e1",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fvite.png?alt=media&token=cf90dc05-e323-48e5-8d2c-5826397a54c8",
-    ],
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774288880/portfolio/react_cjjstw.jpg",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340130/portfolio/firebase_gwx6no.jpg",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340130/portfolio/sass_e2imbk.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340135/portfolio/vite_lka2od.png"
+
+          ],
     github: {
       frontend: "https://github.com/ris-jeewa/Quick-Chat",
       backend: "",
@@ -114,15 +110,15 @@ const projects: ProjectItem[] = [
   {
     title: "Photo Gallery",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/Screenshot%202024-10-24%20005007.png?alt=media&token=6c04b4a5-6000-4135-9bc1-a2cd5ef473e9",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340455/portfolio/photogallery_h4vtbj.png",
     description:
       "Photography portfolio with images from Unsplash API.",
     techs: ["Next.js", "Tailwind", "TypeScript"],
     stack: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnext.jpeg?alt=media&token=63069384-b9b4-4c87-834b-b2def273a1e0",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftailwind.png?alt=media&token=d08c76b0-ca3d-4ff4-b145-2b7b2d16644e",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftypescript.svg?alt=media&token=d190a918-c630-4c41-9b4c-5d7e725d99ab",
-    ],
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774288529/portfolio/nextjs_siqrfa.webp",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340131/portfolio/tailwind_wf6sem.png",
+      "https://res.cloudinary.com/dcn64hytu/image/upload/v1774340134/portfolio/ts_kkiq5o.png"
+          ],
     github: {
       frontend: "https://github.com/ris-jeewa/photo-gallery",
       backend: "",
