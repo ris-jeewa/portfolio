@@ -222,6 +222,8 @@ function ProjectCard({ project }: { project: ProjectItem }) {
           src={project.image}
           alt={project.title}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
         />
         <div className="absolute bottom-2 right-2 flex -space-x-1">
           {project.stack.slice(0, 4).map((src, i) => (
@@ -232,6 +234,8 @@ function ProjectCard({ project }: { project: ProjectItem }) {
               className="h-6 w-6 rounded-full border border-[var(--bg-color)] bg-[var(--bg-color)] object-contain shadow-sm"
               width={24}
               height={24}
+              loading="lazy"
+              decoding="async"
             />
           ))}
         </div>

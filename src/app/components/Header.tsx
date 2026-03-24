@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { words1, words2 } from "../data/header";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
@@ -27,6 +26,8 @@ export const HeaderSection = () => {
             className="w-full h-full object-cover object-top"
             width={300}
             height={360}
+            fetchPriority="high"
+            decoding="async"
           />
         </div>
       </div>
