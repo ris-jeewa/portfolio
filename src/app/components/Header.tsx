@@ -22,7 +22,7 @@ export const HeaderSection = () => {
       <div className="flex-shrink-0 flex justify-center md:justify-end order-1 md:order-2">
         <div className="relative w-[200px] h-[240px] sm:w-[260px] sm:h-[300px] md:w-[300px] md:h-[360px] rounded-[1.75rem] overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)]">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/profile.jpg?alt=media&token=4432f3cb-3830-424d-9845-d30fd93b3016"
+            src="https://res.cloudinary.com/dcn64hytu/image/upload/v1774342095/portfolio/profile_vqggnm.jpg"
             alt="Risni Dheerasekara"
             className="w-full h-full object-cover object-top"
             width={300}
