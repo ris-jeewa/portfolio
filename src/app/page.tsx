@@ -119,7 +119,7 @@ const Page = () => {
         <div className="horizontal"></div>
         <div>
           <h3>Designed & built by <span>Risni Dheerasekara</span></h3>
-          <h3>© 2025. All rights reserved.</h3>
+          <h3>©{new Date().getFullYear()}. All rights reserved.</h3>
         </div>
       </section> 
     </div>
