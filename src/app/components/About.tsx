@@ -57,19 +57,6 @@ const education = [
   },
 ];
 
-export const skills = [
-  { name: "Cloudinary", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fcloudinary.svg?alt=media&token=27dbb89c-75dd-4eba-894c-1daba1dce239" },
-  { name: "CSS", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fcss.svg?alt=media&token=90593df9-1bd5-44cd-a57a-2688967d3892" },
-  { name: "React", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Freact.svg?alt=media&token=dff6fa70-0756-4302-97c3-537331ba3f1b" },
-  { name: "Next JS", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnext.jpeg?alt=media&token=63069384-b9b4-4c87-834b-b2def273a1e0" },
-  { name: "HTML", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fhtml.svg?alt=media&token=74c58f6c-24a2-48bd-9ebf-b0dd0e300e33" },
-  { name: "Nest JS", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fnest.svg?alt=media&token=de7403a8-7451-4ec3-8a98-32555ab198cb" },
-  { name: "Javascript", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fjs.svg?alt=media&token=a1f58e08-b640-48a8-b6e6-4de7fc4694f8" },
-  { name: "Typescript", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Ftypescript.svg?alt=media&token=d190a918-c630-4c41-9b4c-5d7e725d99ab" },
-  { name: "Java", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fjava.svg?alt=media&token=8685e585-8b40-4cb9-a97e-0588fa49363c" },
-  { name: "Python", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fpython.svg?alt=media&token=73f47ee1-9d4b-4778-8a6e-f140e5955d23" },
-  { name: "Spring Boot", link: "https://firebasestorage.googleapis.com/v0/b/portfolio-935fd.appspot.com/o/skills%2Fspring-logo.png?alt=media&token=37ffb903-f75d-4f9f-917d-29660d6a2eee" },
-];
 
 export const AboutMeSection = () => {
   return (
@@ -141,28 +128,6 @@ export const AboutMeSection = () => {
         </div>
       </BackgroundGradient>
 
-      {/* Tech Stack */}
-      <BackgroundGradient className="rounded-xl p-6 sm:p-10 bg-[var(--second-bg-color)] border border-[var(--second-color)]/20">
-        <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)] mb-6">
-          Tech Stack
-        </div>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
-          {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center gap-2">
-              <img
-                src={skill.link}
-                height={48}
-                width={48}
-                alt={skill.name}
-                className="rounded-lg w-12 h-12 object-contain"
-              />
-              <span className="text-xs text-[var(--text-color)] text-center">
-                {skill.name}
-              </span>
-            </div>
-          ))}
-        </div>
-      </BackgroundGradient>
     </div>
   );
 };
