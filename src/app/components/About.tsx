@@ -1,15 +1,13 @@
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 
-const profileSummary =
-  "Professional Full Stack Engineer with over a year of experience and proficiency in developing scalable web applications. Skilled in both backend and frontend technologies, cloud platforms, and workflow automation. Strong problem-solving abilities with a background in R&D and collaborative team projects. Motivated to contribute to innovative solutions while continuously expanding technical expertise.";
-
+const profileSummary = 
+"Full Stack Developer and final year IT undergraduate at the University of Moratuwa, with over a year of experience in building scalable web applications. Skilled in modern backend and frontend technologies, with experience in cloud platforms and distributed systems. Passionate about solving real-world problems and building efficient, impactful software."
 const personalInfo = [
-  { label: "First Name", value: "Risni" },
-  { label: "Last Name", value: "Dheerasekara" },
+  { label: "Name", value: "Risni Dheerasekara" },
   { label: "Email", value: "risni.jeewa@gmail.com" },
   { label: "Phone", value: "+94 70 3797 074" },
-  { label: "Languages", value: "English (Fluent), Sinhala (Native)" },
+  { label: "Languages", value: "English | Sinhala" },
 ];
 
 
@@ -23,7 +21,7 @@ const workExperience = [
   },
   {
     period: "Dec 2024 – Jun 2025",
-    title: "Software Engineer Intern – Full Stack Developer",
+    title: "Intern Full Stack Developer",
     company: "iVedha Inc.",
     tech: "Rust · Node.js · React · TypeScript · PostgreSQL · Docker · GCP · Apigee · Airflow · RBAC · REST APIs",
   },
@@ -105,7 +103,7 @@ export const AboutMeSection = () => {
       {/* Academic Qualification */}
       <BackgroundGradient className="rounded-xl p-6 sm:p-10 bg-[var(--second-bg-color)] border border-[var(--second-color)]/20">
         <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)] mb-6">
-          Academic Qualification
+          Education
         </div>
         <div className="relative pl-8 border-l-2 border-[var(--main-color)]/30 space-y-8">
           {education.map((edu, i) => (
