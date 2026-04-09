@@ -1,8 +1,8 @@
 import "./styles/globals.css";
 
 export const metadata = {
-  title: "Risni Dheerasekara | Software Engineer",
-  description: "Full-stack software engineer. Building scalable web applications with React, Next.js, Node.js, and more.",
+  title: "Risni Dheerasekara | Full Stack Developer",
+  description: "Full Stack Developer. Building scalable web applications with React, Next.js, Node.js, and more.",
 };
 
 export default function RootLayout({

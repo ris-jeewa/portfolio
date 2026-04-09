@@ -38,9 +38,9 @@ export const navItems = [
   ];
   
   export const words2 = [
-    { text: "Software " },
+    { text: "Full Stack " },
     {
-      text: "Engineer",
+      text: "Developer",
       className: "text-[var(--main-color)]",
     },
   ];
