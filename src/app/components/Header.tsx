@@ -19,7 +19,7 @@ export const HeaderSection = () => {
   return (
     <div className="justify-center flex flex-col md:flex-row md:gap-12 gap-8 align-center mt-[4rem]">
       <div className="flex-shrink-0 flex justify-center md:justify-end order-1 md:order-2">
-        <div className="relative w-[200px] h-[240px] sm:w-[260px] sm:h-[300px] md:w-[300px] md:h-[360px] rounded-[1.75rem] overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)]">
+        <div className="relative w-[200px] h-[200px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)]">
           <img
             src="https://res.cloudinary.com/dcn64hytu/image/upload/v1774342095/portfolio/profile_vqggnm.jpg"
             alt="Risni Dheerasekara"
@@ -35,7 +35,9 @@ export const HeaderSection = () => {
         <TypewriterEffectSmooth words={words1} delay={1} />
         <TypewriterEffectSmooth words={words2} delay={4} />
         <p className="text-[var(--second-color)] text-sm md:text-base leading-relaxed mb-5 mt-1">
-          Full-stack developer focused on building scalable web applications. I enjoy turning complex problems into simple solutions and collaborating with teams to ship quality software.
+        Building scalable, real-world systems using Java, Spring Boot, and Next.js
+
+        I specialize in backend development, distributed systems, and performance optimization.
         </p>
         <HoverBorderGradient
           containerClassName="rounded-full w-[200px] h-[48px]"
