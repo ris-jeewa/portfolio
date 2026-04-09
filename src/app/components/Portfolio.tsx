@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { IconSearch, IconBrandGithub, IconWorld } from "@tabler/icons-react";
 import { cn } from "../utils/cn";
@@ -135,6 +135,7 @@ function getAllTechs(items: ProjectItem[]): string[] {
 export const Portfolio = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
+  const [showAll, setShowAll] = useState(false);
 
   const allTechs = useMemo(() => getAllTechs(projects), []);
 
@@ -154,11 +155,20 @@ export const Portfolio = () => {
     });
   }, [searchQuery, selectedTechs]);
 
+  useEffect(() => {
+    setShowAll(false);
+  }, [searchQuery, selectedTechs]);
+
   const toggleTech = (tech: string) => {
     setSelectedTechs((prev) =>
       prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
     );
   };
+
+  const visibleProjects = useMemo(() => {
+    if (showAll) return filteredProjects;
+    return filteredProjects.slice(0, 2);
+  }, [filteredProjects, showAll]);
 
   return (
     <div className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -204,11 +214,23 @@ export const Portfolio = () => {
               tech filters.
             </p>
           ) : (
-            filteredProjects.map((project, idx) => (
+            visibleProjects.map((project, idx) => (
               <ProjectCard key={idx} project={project} />
             ))
           )}
         </div>
+
+        {filteredProjects.length > 2 && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((v) => !v)}
+              className="rounded-full border border-[var(--second-color)]/50 bg-transparent px-6 py-2.5 text-sm font-semibold text-[var(--text-color)] transition-colors hover:border-[var(--main-color)]/60 hover:text-[var(--main-color)]"
+            >
+              {showAll ? "Show less" : "Show more"}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
