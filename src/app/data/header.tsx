@@ -2,6 +2,7 @@ import {
     IconUser,
     IconCode,
     IconBriefcase,
+    IconArticle,
     IconMail,
   } from "@tabler/icons-react";
 
@@ -22,6 +23,11 @@ export const navItems = [
       icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
+      name: "Blogs",
+      link: "#blogs",
+      icon: <IconArticle className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
       name: "Contact",
       link: "#contact",
       icon: <IconMail className="h-4 w-4 text-neutral-500 dark:text-white" />,
@@ -38,9 +44,9 @@ export const navItems = [
   ];
   
   export const words2 = [
-    { text: "Software " },
+    { text: "Full Stack " },
     {
-      text: "Engineer",
+      text: "Developer",
       className: "text-[var(--main-color)]",
     },
   ];

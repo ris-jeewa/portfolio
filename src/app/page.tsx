@@ -14,6 +14,7 @@ import { AboutMeSection } from "./components/About";
 import { InfiniteMovingCards } from "./components/ui/infinite-moving-cards";
 import { IconMenu2 } from "@tabler/icons-react";
 import { Portfolio } from "./components/Portfolio";
+import { Blogs } from "./components/Blogs";
 
 const Home = () => {
   return (
@@ -37,11 +38,7 @@ const Page = () => {
       <div className="h-[30rem] relative mt-8 px-5 sm:px-14 ">
         <Vortex className="z-0 ">
           <div className=" flex justify-between z-10 text-sm sm:text-lg" id="home">
-            <p className="text-lg md:text-xl font-semibold tracking-tight">
-              <span className="text-[var(--main-color)]">Risni</span> Dheerasekara
-            </p>
-
-            <div id="avatar">
+          <div className="flex justify-start items-center gap-4">
             <img
             src="https://res.cloudinary.com/dcn64hytu/image/upload/v1774341721/portfolio/avatar_jtfiuw.svg"
               alt="image"
@@ -49,7 +46,11 @@ const Page = () => {
               width={60}
               height={5}
             />
+            <p className="text-lg md:text-xl font-semibold tracking-tight">
+              <span className="text-[var(--main-color)]">Risni</span> Dheerasekara
+            </p>
             </div>
+            
 
             <div className="navbar">
               {navItems.map((item, index) => (
@@ -95,7 +96,7 @@ const Page = () => {
        <TracingBeam>
         <section className="aboutme" id="aboutme">
           <h1 className="section-title mt-1 text-center text-3xl md:text-5xl">
-            About
+            Get to know more
           </h1>
           <AboutMeSection />
         </section>
@@ -106,6 +107,13 @@ const Page = () => {
           Projects I&apos;ve Built
         </h1>
         <Portfolio />
+      </section>
+
+      <section className="blogs" id="blogs">
+        <h1 className="section-title mt-1 mb-6 text-center text-3xl md:text-5xl">
+          Medium Blogs
+        </h1>
+        <Blogs />
       </section>
 
       <section className="contact" id="contact">
@@ -119,7 +127,7 @@ const Page = () => {
         <div className="horizontal"></div>
         <div>
           <h3>Designed & built by <span>Risni Dheerasekara</span></h3>
-          <h3>© 2025. All rights reserved.</h3>
+          <h3>©{new Date().getFullYear()}. All rights reserved.</h3>
         </div>
       </section> 
     </div>
