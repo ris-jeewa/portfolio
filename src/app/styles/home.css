@@ -79,6 +79,36 @@ section {
   text-align: center;
 }
 
+.about-mascot-glow::before {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  background: radial-gradient(
+    ellipse at center,
+    var(--accent-glow) 0%,
+    transparent 70%
+  );
+  filter: blur(20px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-mascot {
+  position: relative;
+  z-index: 1;
+  animation: mascot-float 5s ease-in-out infinite;
+}
+
+@keyframes mascot-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   #media {
