@@ -42,8 +42,8 @@ const projects: ProjectItem[] = [
     image:
       "https://res.cloudinary.com/dcn64hytu/image/upload/v1774019024/portfolio/Screenshot_2026-03-20_202240_omtht7.png",
     description:
-      "Full-stack marketplace connecting clients with freelancers. OAuth2/OIDC via WSO2 Identity Server, user profiles (Cloudinary), project/job workflows, and milestone tracking.",
-    techs: ["Spring Boot", "React", "WSO2 Identity Server", "Cloudinary", "OAuth2", "OIDC"],
+      "Full-stack marketplace connecting clients with freelancers. OAuth2/OIDC via Okta, user profiles (Cloudinary), project/job workflows, and milestone tracking.",
+    techs: ["Spring Boot", "React", "Okta", "Cloudinary", "OAuth2", "OIDC"],
     stack: [
       "https://res.cloudinary.com/dcn64hytu/image/upload/c_crop,ar_1:1/v1774288314/portfolio/SB_oupitp.webp",
       "https://res.cloudinary.com/dcn64hytu/image/upload/v1774288880/portfolio/react_cjjstw.jpg",
