@@ -1,6 +1,9 @@
 import React from "react";
 import { BackgroundGradient } from "./ui/background-gradient";
 
+const MASCOT_IMAGE =
+  "https://res.cloudinary.com/dcn64hytu/image/upload/v1780455605/portfolio/ChatGPT_Image_Jun_3__2026__08_25_54_AM-removebg-preview_pv5zyp.png";
+
 const profileSummary = 
 "Full Stack Developer and final year IT undergraduate at the University of Moratuwa, with over a year of experience in building scalable web applications. Skilled in modern backend and frontend technologies, with experience in cloud platforms and distributed systems. Passionate about solving real-world problems and building efficient, impactful software."
 const personalInfo = [
@@ -61,21 +64,37 @@ export const AboutMeSection = () => {
     <div className="mx-auto max-w-5xl w-full px-4 sm:px-6 mt-10 flex flex-col gap-10">
       {/* About Me / Profile */}
       <BackgroundGradient className="rounded-xl p-6 sm:p-10 bg-[var(--second-bg-color)] border border-[var(--second-color)]/20">
-        <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)] mb-4">
-          About Me
-        </div>
-        <p className="text-[var(--text-color)] text-sm md:text-base leading-relaxed mb-6">
-          {profileSummary}
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm md:text-base mb-6">
-          {personalInfo.map((item, i) => (
-            <p key={i}>
-              <span className="font-medium text-[var(--second-color)]">{item.label}:</span>{" "}
-              <span className="text-[var(--text-color)]">{item.value}</span>
+        <div className="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start">
+          <div className="flex-1 w-full min-w-0 order-2 md:order-1">
+            <div className="uppercase md:text-lg font-medium tracking-wider text-[var(--main-color)] mb-4">
+              About Me
+            </div>
+            <p className="text-[var(--text-color)] text-sm md:text-base leading-relaxed mb-6">
+              {profileSummary}
             </p>
-          ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-sm md:text-base">
+              {personalInfo.map((item, i) => (
+                <p key={i}>
+                  <span className="font-medium text-[var(--second-color)]">{item.label}:</span>{" "}
+                  <span className="text-[var(--text-color)]">{item.value}</span>
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="flex-shrink-0 order-1 md:order-2 flex justify-center md:justify-end w-full md:w-auto">
+            <div className="about-mascot-glow relative">
+              <img
+                src={MASCOT_IMAGE}
+                alt="Risni — designer mascot illustration"
+                className="about-mascot w-[220px] sm:w-[280px] md:w-[320px] h-auto object-contain"
+                width={320}
+                height={320}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
         </div>
-
       </BackgroundGradient>
 
       {/* Job Experience */}
