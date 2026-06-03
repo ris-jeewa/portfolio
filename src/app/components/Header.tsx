@@ -6,7 +6,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export const HeaderSection = () => {
   const downloadCV = () => {
-    const url ="https://drive.google.com/file/d/11XlXtx47x8djLeHi0iWDsEK2tMTpyIZ4/view?usp=sharing"
+    const url ="https://drive.google.com/file/d/1ZOVgkIhpNJQpc8bKqzmp3-Hz6D3uPDkc/view?usp=sharing";
     const file = "RisniCV.pdf";
     const link = document.createElement("a");
     link.href = url;
@@ -17,7 +17,7 @@ export const HeaderSection = () => {
   };
 
   return (
-    <div className="justify-center flex flex-col md:flex-row md:gap-12 gap-8 align-center mt-[4rem]">
+    <div className="justify-center items-center flex flex-col md:flex-row md:gap-12 gap-8 mt-[4rem]">
       <div className="flex-shrink-0 flex justify-center md:justify-end order-1 md:order-2">
         <div className="relative w-[200px] h-[200px] sm:w-[260px] sm:h-[260px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden shadow-[0_20px_50px_-12px_rgba(0,0,0,0.4)]">
           <img
@@ -31,7 +31,7 @@ export const HeaderSection = () => {
           />
         </div>
       </div>
-      <div className="min-h-[220px] w-[90%] md:w-[44%] flex flex-col text-left justify-center relative bg-[var(--second-bg-color)]/80 backdrop-blur border border-[var(--second-color)]/20 py-6 px-6 md:px-8 rounded-xl">
+      <div className="order-2 md:order-1 min-h-[220px] w-full max-w-lg md:max-w-none md:w-[44%] flex flex-col text-center md:text-left justify-center items-center md:items-start relative bg-[var(--second-bg-color)]/80 backdrop-blur border border-[var(--second-color)]/20 py-6 px-6 md:px-8 rounded-xl">
         <TypewriterEffectSmooth words={words1} delay={1} />
         <TypewriterEffectSmooth words={words2} delay={4} />
         <p className="text-[var(--second-color)] text-sm md:text-base leading-relaxed mb-5 mt-1">
