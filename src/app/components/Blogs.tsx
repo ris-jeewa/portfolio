@@ -1,11 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { IconBrandMedium, IconExternalLink } from "@tabler/icons-react";
 import { blogPosts } from "../data/blogs";
 
+const INITIAL_BLOGS_VISIBLE = 2;
+
 export const Blogs = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visiblePosts = useMemo(() => {
+    if (showAll) return blogPosts;
+    return blogPosts.slice(0, INITIAL_BLOGS_VISIBLE);
+  }, [showAll]);
+
   return (
     <div className="mx-auto max-w-5xl px-4 sm:px-6">
       <div className="rounded-2xl border border-[var(--second-color)]/30 bg-[var(--second-bg-color)]/80 p-6 md:p-8 shadow-xl">
@@ -16,8 +25,8 @@ export const Blogs = () => {
               Medium Blogs
             </h2>
             <p className="mt-2 text-sm text-[var(--second-color)]">
-              A couple of posts on backend engineering, distributed systems, and
-              Java.
+              Posts on cloud infrastructure, backend engineering, distributed
+              systems, and Java.
             </p>
           </div>
 
@@ -33,7 +42,7 @@ export const Blogs = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-          {blogPosts.map((post) => (
+          {visiblePosts.map((post) => (
             <article
               key={post.href}
               className="group rounded-xl border border-[var(--second-color)]/20 bg-[var(--bg-color)] p-5 transition-all duration-200 hover:border-[var(--main-color)]/40 hover:shadow-[0_0_24px_var(--accent-glow)]"
@@ -72,6 +81,18 @@ export const Blogs = () => {
             </article>
           ))}
         </div>
+
+        {blogPosts.length > INITIAL_BLOGS_VISIBLE && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((v) => !v)}
+              className="rounded-full border border-[var(--second-color)]/50 bg-transparent px-6 py-2.5 text-sm font-semibold text-[var(--text-color)] transition-colors hover:border-[var(--main-color)]/60 hover:text-[var(--main-color)]"
+            >
+              {showAll ? "Show less" : "Show more"}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
